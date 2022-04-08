@@ -1,0 +1,62 @@
+/* div {
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+  margin: 10%;
+  padding: 0 20px;
+
+  box-sizing: border-box;
+} */
+
+/* */ /*Esses sinais simbolizam comentários no CSS.*/
+
+/*
+div {
+  height: 100px;
+  border: 1px solid red;
+  width: 10px;
+  display: inline;
+}
+
+span {
+  width: 10px;
+  height: 100px;
+  border: 1px solid green;
+  display: block;
+} */
+
+/*
+div {
+  margin: 20px;
+}
+
+span {
+  margin: 100px;
+} */
+
+div,
+section {
+  border: 1px solid red;
+  width: 100px;
+  height: 100px;
+  /* display: inline; */
+  margin: 20% auto;
+
+  border: 10px solid red; /* para todas as bordas*/
+  
+  /* quando quiser tratar uma borda especifica, basta selecionar, conforme abaixo */
+  border-top: groove green 4px;
+  border-bottom: dashed blue 4px;
+
+  outline: yellow 4px solid; /*Somente modifica a parte externa da caixa*/
+
+
+  box-sizing: border-box; /*faz com que as bordas sejam a soma das partes de width. Faz com que os pixels colocados no width sejam mantidos mesmo após mudança do border.  
+}
+/*div {
+  margin-bottom: 14px;
+}
+
+section {
+  margin-top: 12px;
+} */

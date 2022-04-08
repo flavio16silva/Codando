@@ -1,0 +1,32 @@
+/* Tirar margens laterais que o navegador coloca no border ou body. Feito abaixo: */
+/*Todo o background se repete na pagina toda sempre que é colocado. */
+* {
+  margin: 0;
+}
+/*
+header {
+  height: 100px;
+  border: 7px dashed red;
+  padding: 16px;
+} */
+
+main {
+  color: purple;
+  padding: 8px;
+
+  background-color: rgb(45, 100, 50);
+  background-image: url(https://rocketseat.com.br/icons/icon-144x144.png?v=cfca599cb367ccaf7377d56ddc7542f5);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  /* contain - a imagem fica dentro
+  cover - estica e vai cobrir todo o background */
+  background-origin: content-box;
+  background-clip: content-box;
+  background-attachment: fixed;
+
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 0, 0, 0.2)),
+    url(https://rocketseat.com.br/icons/icon-144x144.png?v=cfca599cb367ccaf7377d56ddc7542f5)
+      no-repeat right top / 50px border-box content-box fixed;
+  /* No uso de um único background deve ser colocado dois valores para representar ambos os backgrounds: background-origin: content-box; background-clip: content-box;*/
+}

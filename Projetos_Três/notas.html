@@ -1,0 +1,115 @@
+<!-- Tabelas/ Table
+  Prós:
+    - Visualização de Dados via linhas e colunas
+    - Boa acessibilidade para a leitura dos dados
+
+  Contras:
+    - Pouco Fléxivel
+    - Precisa de estilização para melhor visualização
+    
+  Não Usar:
+    - Para criar seu layout 
+     
+-->
+
+<!-- Criação de uma tabela básica
+
+<caption>: Irá descrever o que a tabela esta fazendo. Do que se trata
+
+    tr: é uma primeira linha, ou uma linha. A cada <tr> uma nova linha será acrescentada na tabela. 
+    th: é o cabeçalho
+    td: é a descrição de cada uma das colunas. o conteúdo da linha. Faz o link com o que esta descrito no <th>, que seria o titulo da coluna.
+
+
+    <thead>: cabeçalho da tabela
+    <tbody>: corpo da tabela
+    <tfoot>: rodapé da tabela
+
+   <col>: Coluna
+   <colgroup>: tag: que vai agrupar ou criar grupo de colunas
+
+   row: linha 
+   rowspan="2": ocupar espaço de linhas
+   colspan="2": ocupar espaço de colunas
+  
+obs.: SEO: SEARCH ENGINE OPTIMIZATION - são motores de busca pela internet.Ex.: GOOGLE
+
+-->
+
+<!--Cabeçalhos
+    <head> é a parte que não é exibida no navegador. E serve para configuração da pagina. Contem informações como o titulo da página, links.
+
+    Meta
+      <meta>
+      Atributos:
+        -charset
+        -name
+        -content
+
+
+  <meta charset="UTF-8">: Codificação de caracteres especiais. Leituras de outros idiomas que são entendidos e lidos pelo navegador. Sempre deixar definido o CHARSET para que as informações fiquem corretas e não embaralhadas.
+ 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">: portabilidade para dispositivos mobiles
+
+      Name: especifica qual a <meta> a ser alcançada.
+      Viewport: é toda parte visivel do dispositivo movel. Aquela parte branca em geral.
+      Content: para falar sobre o conteúdo da <meta>
+ 
+
+  Favicon: Favorite Icon
+      -Link para ícones personalizados.
+
+      Favicon básico:
+        Atributo (rel), significa relacionamento
+        Ex.: <link rel="Icon" href="/icon/icon-...">
+
+        iPhone não-retina, iPod Touch e dispositivos Android 2.1+:
+        Ex.: <link rel="apple-touch-icon-precomposed" href="/icon/icon-...">
+      
+      Favicon Avançado:
+        O tamanho entre os dispositivos moveis variam por isso usar a tag: size.
+        o rel, ou seja relacionamento será sempre o mesmo entre os dispositivos da Apple. Essas informações são geradas por Frameworks não precisam ser decoradas mas entendidas. 
+        De acordo a geração e carcteristicas (resolução) de cada dispositivo o "href" será alterado, ou seja a referência. 
+
+
+      <meta>
+      Atributos:
+        -charset
+        -viewport
+        -author: definirá o aturo da minha página, fazendo com que a pessoa tenha propriedade sobre a página.
+        -description: mostra o que desejo que apareça na pesquisa do google. Além do link que leva ao site também será mostrado um texto inicial da página.
+        -robots: Definimos o que o robo do google faça ao pesquisar e encontrar a minha página. É padrão deixar: index e follow, ou seja, indexar e mostrar todos os links da página.
+
+          SEO: SEARCH ENGINE OPTIMIZATION - são motores de busca pela internet.Ex.: GOOGLE
+
+    <head>   
+
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="author" content="Flávio Silva">
+      <meta name="description" content="Um website para iniciantes em programação">
+      <meta name="robots" content="noindex,nofollow">
+
+    </head>
+    
+    
+      <meta>
+        -Redes Sociais: 
+        
+        Open Graph: Facebook: è um tipo de metadado que precisamos usar quando formos inserir um conteúdo especial ao compartilhar o link de nossa página lá no Facebook. 
+
+      <head>
+
+        <meta properties="og:image" content="https://cdn-images-1.medium.com/max/92...">
+          - Properties quer dizer proprietário.
+          - Quando eu compartilhar minha página lá no Facebook, irá procurar esse link e mostrar a imagem do link que encontra-se no meu compartilhamento. 
+
+        <meta properties="og:description" content="Aqui vem um texto ao ser compartilhado no facebook"> 
+        
+         <meta properties="og:title" content="Um site da Rocketseat">
+
+         Os ultimos 3 elementos citados são o suficiente para ser mostrado pelo robozinho do facebook criar um card. 
+
+      </head>  
+
+    -->

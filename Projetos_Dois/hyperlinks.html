@@ -1,0 +1,113 @@
+<!--Links
+  Hyperlinks - Elemento Ancora: <a>
+
+    + Anatomia
+    + Atributos:
+     - Globais (title,id,class)
+     - href - é a referencia
+        - para onde iremos quando clicarmos no link?
+          - url completa
+          - fragmento
+          - email
+          - telefone
+          - e outros
+     - download - Vai fazer o download do link em vez de ir para o link.
+     - target - irá dizer o alvo do acesso
+        - _self (padrão)
+        - _blank - irá abrir uma nova pagina, assim não sairá da sua pagina atual.       
+-->
+<a href="https://www.google.com">Google</a>
+
+<!--Utilizando a tag âncora-->
+
+<p>Encontre-me</p>
+
+<ul>
+  <li><a href="https://rocketseat.com.br" target="_blank">Website</a></li>
+  <li><a href="mailto:fal_silva@hotmail.com">Email</a></li>
+  <li><a href="tel:+55719999999999">Telefone</a></li>
+</ul>
+
+<!--fragmento-->
+
+<p>Saiba mais</p>
+<ul>
+  <li><a href="#about">Sobre mim</a></li>
+  <li><a href="#history">Historia</a></li>
+  <li><a href="#works">Trabalhos</a></li>
+</ul>
+
+<h1 id="about">Sobre mim</h1>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto nihil
+voluptatibus omnis doloremque delectus reiciendis! Temporibus recusandae sit
+maiores, cum qui illo perspiciatis quod enim. Temporibus magnam sit obcaecati
+maiores?
+
+<h2 id="history">Historia</h2>
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore repellat
+maiores quos possimus corporis, fugit facere iure veniam soluta, earum saepe,
+modi quibusdam voluptate consectetur? Repellendus quaerat exercitationem
+voluptatem ab.
+
+<h2 id="works">Trabalhos</h2>
+Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque odio accusamus
+ipsam excepturi, tempora nesciunt maxime id, illo dolores ad debitis officia
+minus quae consequuntur. Corrupti quo quod ipsa dicta.
+
+<!--Conteudo dos hyperLinks
+ - Qualquer conteúdo
+-->
+<a href="http://www.google.com.br" title="ir para o Google">
+  <h1>Google</h1>
+  <p>Pode ser incluído outros itens e viram links</p>
+  <img src="https://source.unsplash.com" alt="" />
+</a>
+
+<!--Caminhos dos Arquivos e URLS
+ - Como navegar entre links
+ - Uniform Resource Locator
+     - https://rocketseat.com.br
+     - Sequencia de texto que define onde algo esta localizado na Web
+ - URL usam caminhos para encontrar arquivos
+ 
+ - Caminhos dos arquivos 
+     - Onde, no explorador de arquivos , um recurso esta localizado. 
+
+-->
+<a href="indexDois.html" target="_blank">Abrir Notas</a> <br />
+
+<!--Como navegar pelos caminhos
+  - mesmo diretorio
+  - entrando em diretorios
+  - saindo de diretorios
+  - diretorio raiz (root ou pai)
+
+-->
+
+<a href="Projetos_Two/hyperlinks.html">arquivos na mesma pasta</a> <br />
+<!--mesmo diretorio-->
+<a href="Projetos_One/indexUm">arquivo na pasta projetos</a> <br />
+<!--entrando em diretorio-->
+<a href="../Projetos_One/indexUm.html">saindo do diretorio</a> <br />
+<!--Quando incluimos:  ../ estamos saindo do diretorio-->
+<a href="./hyperlinks.html">arquivo no diretorio raiz</a> <br />
+<!--arquivo no diretorio raiz. Nesse caso, o diretorio raiz é a pasta
+projetos_Two-->
+
+<!--URLs Absolutas vs Relativas
+    - Absolutos
+      - Inclui protocolo e nome do dominio
+        - http://www.rocketseat.com.br/Projetos_One/indexUm.html
+      - Sempre apontará para o mesmo local pois é absoluto
+
+    - Relativos
+      - relativo a pagina aberta no momento
+      - apontará para os lugares diferentes
+-->
+<a href="google.com">relativo: ir para o google</a> <br />
+<a href="https://www.google.com">absoluto: ir para o google</a>
+<!--tem a referencia, protocolo: "https" na frente-->
+
+<!--Exercicio de Apresentação
+    Criando navegação entre arquivos
+-->

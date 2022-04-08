@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 800px;
+  background: red;
+  align-items: center;
+}
+
+.container div {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.container .box-1 {
+  flex-basis: 30%;
+}
+
+.container .box-2 {
+  flex-basis: 30%;
+}
+
+.container .box-3 {
+  flex-basis: 30%;
+}

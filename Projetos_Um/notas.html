@@ -1,0 +1,121 @@
+<!--HTML: Hyper Markup Language. Onde tem linguagem, tem semantica e sintaxe para fazer marcação de textos. 
+HT: hiper texto;
+M: Marcação;
+L: linguagem.-->
+<!--Hyper: é a marcação de textos atraves do uso de links, que quando clicados direcionam para outros textos-->
+
+<!--Anatomia da Tags
+A marcação do HTMl são as Tags-->
+<!--Abrir uma tag é: "<h1>" coloca o sinal de "<"(menor) depois a tag=h1 e para fechar o sinal de ">" (maior)-->
+<!--Fechar uma tag é: "</h1>" basta incluir o a barra na proxima tag, ficando assim: <h1> </h1>-->
+
+<!--Elementos vazios
+img= imagem, ela não tem conteudo apenas atributos
+Esses elementos vazios não possuem fechamentos, ou seja não possuem esse tipo de simbolo: /> -->
+
+<!--Atributos HTML
+Servem como: informações extras e configurações.
+
+Atributos Booleanos. Esses não precisam de conteúdo
+<input type="text" disabled/>
+inserção de texto desabilitada -->
+
+<!--Aspas
+ - Omissão
+ - Simples
+ - Dupla: Uso desse tipo é uma boa prática -->
+
+<!--<a href="">link</a> Irá inserir um link na página
+Diz para onde o link irá nos levar-->
+
+<!--Atributos Globais mais Utilizados
+São atributos aplicados a todas as Tags:
+ - Class: usada para aplicar estilo CSS, Acessar no JavaScript e classificar todo o conteúdo.
+ - Contenteditable: irá receber True ou False
+ - data-* Pode ser incluído qualquer nome apos esse atributo, mas sempre separado-por-tracinho. Usado no JavaScript e no CSS.
+ - Hidden: usado para esconder uma tag.
+ - id: Só pode ser usado um único por pagina. Cada tag deverá ter seu próprio id. Se usar igual pode dar problema ao referenciar no javaScript e no CSS. Se for repetir algum nome utilizamos a: class
+ - Style: Aplica a estilização no html. Geralmente usada fora do html, porque temos o CSS para fazer essas modificações de estilo no html. 
+ - Tabindex: Usado para tabular pelo teclado. Bom para ser usado para quem não tem o mouse.
+ - Title: Usado para definição de Titulo-->
+
+<!--Aninhamento de Tags: Como colocar uma tag dentro da outra
+ - FLuxo: Onde cada tag é lida por ordem de aparição na pagina.
+ - Hierarquia: È a familiaridade das tags, onde temos tag "filha" e tag "pai"
+ - Posicionamento dos Elementos: algumas tags sao fixadas em linha. Já outras tags irao quebrar a linha. 
+
+Sempre observar a abertura e fechamendo das tags-->
+
+<!--Conteudo do texto e Caracteres Reservados
+
+"" Aspas <> maior e menor-->
+
+<!--Anatomia de um Documento HTML-->
+<!--Doctype html: Serve para alguns navegadores identificarem que estamos trabalhando com html5-->
+<!--Caso deseje colocar toda a estrutura básica do html para digitar: ! 
+Segue abaixo estrutura basica:-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+
+<!--Criando Projeto-->
+
+<!--
+  Semantica: dar significado as coisas no html. Quanto mais bem semantico é seu html ele fica melhor nas pesquisas do google. 
+ - Dar significado
+ - Elementos Semanticos
+-->
+
+<!--
+  Cabeçalhos e paragrafos
+-Inclusão de marcações para estruturar o texto.
+-Melhora a leitura e interesse do leitor.
+-Ajuda em site de busca ter uma boa semantica. 
+-Deixar os paragrafos bem definidos na pagina.
+-Verificar os titulos de cada paragrafo para saber na leitura identificar titulos e subtitulos.
+-->
+
+<!--Listas
+ - Ordenadas: usa-se a tag: ol
+ - Não ordenadas: usa-se a tag: ul
+
+ tag: li: usada para enumerar, colocar em lista os itens.
+ Caso tenha muitos itens na lista, basta colocar li * (o número de listas a ser criado)
+-->
+
+<!--Citações: serve para pegar um texto de fora e avisar de onde vem esse texto
+  <blockquote> referenciar um texto externo que foi usado naquela publicação;
+    <cite> irá citar, mostrar o link externo que foi usado. 
+      <q> usado para citações curtas que não precisam de paragrafo ou quebra de linha. 
+-->
+
+<!--Abreviações
+<abbr> cria uma abreviação e deixa uma linha pontilhada abaixo da palavra abreviada.
+  -->
+
+<!--Detalhes de Contato
+<adress> São detalhes da pessoa que escreveu o documento em HTML. Especificar o autor, o contato de quem fez a pagina HTML.
+
+<dl> Description List
+  <dt></dt> Description Terms
+  <dd></dd> A descrição do texto
+</dl>  
+-->
+
+<!--Representando Códigos de Computador
+  <code> Parte generica do codigo
+  <pre> Blocos de codigo, pois essas tag mantem os espaços em branco e recuos que eu coloco no meu codigo.
+-->
+
+<!--Elementos Genericos
+*<div> uso para trabalho em bloco
+*<span> uso para trabalho em linha 
+-->

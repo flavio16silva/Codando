@@ -1,0 +1,353 @@
+<!--
+  O que signfica CSS? 
+  - Cascading Style Sheet - Folha de Estilo em Cascata; 
+  - Codigo para criar estilos no HTML; - HTML é a estrutura e o CSS é a
+beleza; 
+  - Não é uma linguagem de programação; 
+  - É uma linguagem Style Sheet - Porque tem a ideia de sintaxe, e de escrever as coisas. E também possui palavras especificas que precisam ser entendidas. 
+  
+  * Site de estudo e teste: codepen.io/pen/ *
+
+  Comentários 
+  - Não irá afetar o seu código;
+  - Ajuda a lembrar blocos de código;
+  - Deixa dicas para leitura;
+  - Ajuda aos outros entenderem;
+  - Nunca esqueça de fechar um comentário aberto;
+  - Comentários começam com: /* e terminam com: */ ;
+  - O comentário também pode ser usado para desabilitar parte de seu código.
+  - Como iniciante da programação é importante sempre comentar seus códigos para saber o que fez a cada linha.
+
+
+  Anatomia
+   - Vem primeiro a  - Propriedade:Valor;
+      - Selector: ex.: "h1" - procura lá no HTML algum tipo de tag "h1" e aplica as propriedades {entre as chaves} para que sejam mudadas. 
+      - Declaration: é tudo que encontra-se dentro das chaves
+      - Properties: são as informações antes do dois pontos.
+      - Property Value: são as informações completas contendo propriedade:valor;
+
+    h1 {
+        color: blue;
+        font-size: 60px; 
+        background: gray; - background significa cor de fundo
+
+    }
+
+  Seletors:  Conecta um elemento HTML como o CSS
+    Tipos:
+      - GLobal Selector *
+      - Element/Type selector h1, h2, p, div
+      - ID Selector #box, #container
+      - Class Selector .red .m-4
+      - Attribute selector pseudo-class, pseudo-element, e outros.  
+
+
+HTML:
+<div id=container class="m-40"> Margem de 40px
+  <h1>Titulo</h1>
+  <h2>Subtitulo</h2>
+</div>
+
+CSS:
+*{
+  margin: 0; - margem do titulo/subtitulo
+}
+
+#container { - relacionado ao container do HTML
+  width: 200px; - largura
+}
+
+.m-40{ - seletor de classe. Relacionado a margem incluida no HTML
+  margin: 40px;  margem
+}
+
+h1, h2 { - incluindo o h1 e h2 na mesm configuração, não precisando refazer manualmente.
+  color: blue;
+  font-size: 60px;
+  background: gray; 
+}
+
+  
+Conceito de Box Model - Caixas
+   - Quase tudo são caixas no CSS;
+   - Posicionamentos, tamanhos, espaçamentos, bordas, cores;
+   - Caixa pode ficar ao lado ou acima de outra caixa;
+   - Elementos HTML são caixas.
+
+   ******************************************************
+   HTML:
+   <h1>Evolua Rápido</h1>
+   <p>Descrição</p>
+   <button>Embarcar</button>
+
+   CSS:
+   h1 {
+  border: 2px solid red; - borda: espessura e cor
+  margin: 20px; - margem
+  padding: 60px; - preenchimento da borda
+      }
+
+    
+  A Cascata (cascading)
+  - A escolha do browser de qual regra aplicar, caso haja muitas regras para o mesmo elemento. 
+  - Seu estilo é lido de cima para baixo
+  - É levado em consideração 3 fatores:
+      - Origem do estilo
+      - Especificidade
+      - Importância
+    
+  Origem do Estilo:
+  in line >(maior) do que tag style >(maior) do que tag in line 
+
+ Obs.: apartir do momento que começamos a digitar os códigos no HTML ele já esta aplicando um certo tipo de estilo. Conforme exemplo abaixo:
+
+ -->
+
+<h1 style="color: orangered">Titulo</h1>
+<p>paragrafo</p>
+<!--
+Continuação do Assunto Cascata...
+No efeito cascata ele pegará de cima para baixo as informações relacionadas ao: h1
+/-------------------------/
+h1 {
+  color: blue;
+}
+h1 {
+  font-size: 12px;
+}
+/-------------------------/
+Caso haja mudança na linha de codigo relacionado ao mesmo: h1
+Aqui houve apenas mudança de cor, nesse caso ele subscreveu porque é o efeito cascata, que começa de cima para baxo. 
+/-------------------------/
+h1 {
+  color: red;
+}
+h1 {
+  color:blue;
+}
+/-------------------------/
+
+-----------------------------------------------------------
+<h1 style= "color: green">Titulo</h1>         IN LINE 1º mais forte - colocando o CSS direto no elemento que você deseja. 
+------------------------------------------------------------
+<style>
+  h1 {
+    color: gray;
+  }
+  </style>                                   TAG STYLE - 2º mais forte: inserindo a informação CSS direto na criação de uma nova TAG.  
+-------------------------------------------------------------
+h1 {
+  color: red;
+}
+h1 {
+  color:blue;
+}                                            OCORRÊNCIA DA CASCATA - 3º mais forte
+---------------------------------------------------------------
+
+Especificidade:
+É um calculo matemático, onde, cada tipo de seletor e origem de estilo, possuem valores a serem considerados. 
+0. Universal Selector, combinators e negation pseudo-class (:not())
+1. Element type selector e pseudo-elements (:: before, :: after)
+10. Classes e Atribute selectors ([type="radio"])
+100. ID selector
+1000. Inline
+
+Ex.:
+* {   Esse selector esta aplicando a cor para todos mas elementos. Esse asterisco tem valor de zero.
+  color: green;
+}
+
+h1 {   Nesse caso o selector 1 é maor que zero entao acaba aplicando a regra do maior que consta no h1. 
+  color: red;
+}
+
+h1 {
+  color: blue;
+}
+
+-------------------------------------------------------------------------------
+.title {    Nesse caso 10 (title) é maior que 1 (do h1) preferencia de execução para o 10. 
+  color: red;
+}
+
+h1 {
+  color: blue;
+}
+
+* {
+  color: green;
+}
+-----------------------------------------------------------------------------------
+#my-title {           Nesse caso o ID selector que é incluido no HTML e relacionado CSS
+  color: gray;
+}
+
+.title {
+  color: red;
+}
+
+h1 {
+  color: blue;
+}
+
+* {
+  color: green;
+}
+
+Testar: 
+<h1 class="title" id="my-title">Titulo <strong>alo</strong> </h1>
+<p>paragrafo</p>
+
+
+### A regra !Important ###
+  * cuidado, evite uso;
+  * não é considerada uma boa prática;
+  * quebra o fluxo natural da cascata.
+  * Se você estiver fazendo sua própria biblioteca não use !important
+  * Raro caso: Estou usando a biblioteca de alguém e não existe outra forma de modificar, nesse caso usamos essa regra para subscrever tudo ou denotar o grau de importância. 
+
+
+AT RULES
+   - Esta relacionado ao comportamento do CSS;
+   - Começa com o sinal de '@' seguido do identificador e valor.
+     
+  Exemplos Comuns:
+     - @import: incluir um CSS externo; Ex.: @import url("http://local.com/style.css");
+     - @media: regtas condicionais para dispositivos;
+     - @font-face: fontes externas;
+     - @keyframes: Animation.  
+
+
+
+SHORTHAND
+     - Junção de propriedades;
+     - resumido;
+     - legível.
+
+     Ex.: Background properties ISOLADAS:
+
+          background-color: #000;
+          background-image: url(image/bg.gif);
+          background-repeat:no-repeat;
+          background-position: left top;
+     
+     * Background shortland:"Todas propriedades ficam JUNTAS EM LINHA e subscrevem as propriedades colocadas em grupo como feito acima"
+
+        background: #000  url(image/bg.gif) no-repeat left top;
+
+    ## Detalhes
+      # não irá considerar propriedades anteriores;
+      # valores não especificados irão assumir o valor padrão;
+      # geralmente, a ordem descrita não importa, mas, se houver muitas propriedades com valoes semelhantes, podemos encontrar problemas. 
+
+FUNÇÕES
+    - nome seguido de abre e fecha parenteses;
+    - recebe argumentos.
+
+    Exemplos: @import url("http://urlaqui.com/style.css")
+      ou 
+    {
+      color:rgb(255,0,100);
+      width: calc(100% - 10px);
+    }
+
+    -->
+
+<!--PIXELS
+    Valores e Unidades de Medidas
+    - Cada propriedade possui valores 'property: value'
+    - estudo constante afim de entender as propriedades e seus valores. 
+  
+    Tipos Numéricos
+    - integer: número inteiro como: -10 ou 223
+    - number: número deciaml como -2.4, 64 ou 0.234
+    - dimension: é um "number", com uma unidade junto: 90deg, 2s, 8px
+    - percentagem: representa a fração de outro número: 50%
+
+    Unidades Comuns
+    - length: representa um valor de distância: px, em, vw
+    - angle: representa um ângulo: deg, rad, turn
+    - time: representa um tempo: s, ms
+    - resolution: representa resoluções para dispositivos: dpi 
+
+    Distâncias Absolutas <length>
+    - São fixas e não alteram seu valor. 
+      Unidade         Nome                  Equivalência
+      cm          Centímetros                 1cm= 96px/2.54
+      in           Inches (polegadas)         1in= 2.54cm = 96px
+      px            Pixels                    1px = 1/96th of 1in
+  
+    - O mais comum e mais ultilizado é o "px"
+    - não recomendado usar cm
+
+    Distâncias Relativas
+    - São relativas a algum outro valor, pode ser o elemento pai, ou root, ou o tamanho da tela. 
+      - benefícios: Maior adaptação aos diferentes tipos de tela. 
+
+      Unidade             Relativo a                 
+      em            Tamanho da font do pai                
+      rem           Tamanho da font do elemento raiz (root/html)      
+      vw            1% da viewport width (largura)
+      vh            1% da viewport height (altura)  
+     
+      Exemplos:
+      html {
+          font-size: 10px;
+      }
+
+      div {
+          font-size: 32px;
+      }
+
+      p {
+          font-size: 1.6rem;
+      }
+
+      Porcentagens %
+      - Em muitos casos é tratado da mesma maneira que as distâncias <length>
+      - Sempre será relativo a algum valor. 
+      
+
+      Position: Posições
+      - Representa um conjunto de coordenadas 2D;
+      * top, right, bottom, left e center
+      - Usado para alguns tipos de propriedades;
+      - Não confundir com a propriedade 'position' 
+
+      Funções
+       - Em programação, funções são reconhecidas por causar um reaproveitamento de código.
+        *rgb()
+        *hsl()
+        *url()
+        *calc()  
+        Dentro dos parenteses são colocados "valores" que chamamos de argumentos, onde esta função irá nos retornar um valor. 
+
+        Obs.: Uma dica de CSS - Body {} ele não tem uma altura definida por padrão, ele sempre irá se expandir na sua altura dependendo do elemento que tem dentro, ou seja, no decorrer da página enquanto ele não tiver uma referência.  
+
+        vh: viewport high - é toda a tela que estamos trabalhando. 
+        margin: são as margens que o navegador deixa ao redor das imagens. nós também podemos configurar e manioular com essa função. 
+
+      Strings e Identificadores
+        *Strings: texto envolto em aspas, conteúdo a ser informado. 
+        *identificadores: red, black, gold...
+
+
+
+-->
+
+<ul>
+  <li>One</li>
+  <li>Two</li>
+  <li>
+    Three
+    <ul>
+      <li>Three A</li>
+      <li>
+        Three B
+        <ul>
+          <li>Three B 2</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>

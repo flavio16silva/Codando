@@ -1,0 +1,252 @@
+<!--
+Video
+
+-src
+-controls: esa tag mostra os controles do vídeo que será executado. 
+-se não funcionar?
+  -fallback content
+
+-source: São tags vazias que não precisam de conteúdo. 
+  -src
+  -type: informar qual o tipo do vídeo, ou seja, extensão.
+
+- sobre serviços de terceiros
+
+Tags: 
+-autoplay: tocar o vídeo automaticamente;
+-preload (auto): Faz a leitura do vídeo de maneira automatizada. Antes de cliar na seta (play) já vai baixando o vídeo;
+-preload (metadata): Só carregar o que for básico para entendimento do vídeo;
+-preload (none): o vídeo só será carregada após clicar no botão play; 
+-loop: sempre que chegar ao final do vídeo, será reporduzido automaticamente;
+-muted: se o vídeo deve começar mutado;
+-poster: incluir uma imagem de fundo antes do vídeo começar.
+
+Obs.: Nem todos os browers executam os vídeos que são incluídos no HTML. 
+      O vídeo não será executado porque o container (exetensão: .mp4), não é reconhecida pelo browser. 
+-->
+
+<video controls>
+  <source src="./assets-example/rocket.mp4" type="video.mp4" />
+  <p>Este browser não roda video, baixe-o aqui</p>
+</video>
+
+<!--
+  Audio
+
+  -src
+-controls: esa tag mostra os controles do vídeo que será executado. 
+-se não funcionar?
+  -fallback content
+
+-source: São tags vazias que não precisam de conteúdo. 
+  -src
+  -type: informar qual o tipo do vídeo, ou seja, extensão.
+
+  Tags: 
+-autoplay: tocar o audio automaticamente;
+-loop: sempre que chegar ao final do audio, será reporduzido automaticamente;
+-muted: o audio deve começar mutado;
+
+
+-->
+<audio controls autoplay>
+  <source src="./assets-example/viper.mp3" type="audio/mp3" />
+  <source src="./assets-example/viper.ogg" type="audio/ogg" />
+  <p>Seu navegador não suporta audio.</p>
+</audio>
+<!-- Caso não encontre o primeiro audio, tentará o segundo audio da lista.-->
+
+<!--
+  Iframe: in line frame element
+    -É um elemento que trará conteúdo externo.  
+
+  - Atributos
+    - src: de onde esta vindo o conteúdo
+    - height
+    - width
+    - title (acessibilidade)
+    - allowfullscreen: permitir em fullscreen
+    - frameborder: informar se terá uma borda ou não no frame. 
+-->
+<iframe
+  width="560"
+  height="315"
+  src="https://www.youtube.com/embed/AqJKAJ0TKms"
+  frameborder="0"
+  allow="accelerometer; autoplay; encrypted-media; gyroscope;
+  picture-in-picture"
+  allowfullscreen
+  title="Vídeo da Rocketseat"
+>
+</iframe>
+
+<!--
+  Imagens <img>
+      -src: de onde esta vindo o conteúdo
+      -alt: alternativa a imagem. Ou imagem de algo. 
+      -title: colocar um titulo na imagem. Quando o mouse for descansar em cima da imagem. 
+      -width: colocar o atributo se soouver a proporção da imagem. 
+      -height: colocar o atributo se soouver a proporção da imagem. 
+      -adicionando link
+
+
+-->
+<a href="https://rocketseat.com.br">
+  <img
+    src="https://rocketseat.com.br/icons/icon-48x48.png"
+    alt="Logomarca"
+    title="Ao passar do mouse ver titulo"
+    height="50px"
+    frameborder="0"
+  />
+</a>
+
+<!--
+    Praticando Imagens
+
+<a href="https://rocketseat.com.br">
+  <img
+    src="https://rocketseat.com.br/icons/icon-48x48.png"
+    alt="Imagem não pode ser carregada"
+    title="Ao passar do mouse ver titulo"
+    width="500px"
+    height="50px"
+
+-->
+
+<!--
+    Background Image: adicionar um tipo de estilização especifica na pagina
+      - com a tag style
+      - somente para estilo
+      - não é semântico e falta significado
+
+
+<p style="background-image: url('./assets-example/ball.png')">Imagem</p>
+-->
+
+<!--
+    Criando Titulo visiveis para as imagens
+
+    <figure> e <figcaption>: informar que um certo titulo tem a ver com a figura informada. 
+-->
+
+<!-- Testando com a tag: <div>
+<div class="figure">
+  <a href="https://google.com">
+    <img
+      src="https://source.unsplash.com/random"
+      alt="Imagem do Titulo"
+      title="Colocar um titulo na imagem"
+      height="250px"
+    />
+  </a>
+  <p>Colocar um titulo na imagem</p>
+</div>
+-->
+
+<!--
+    Testando com a tag: figure - ABAIXO
+-->
+
+<!-- <a href="https://google.com"> -->
+
+<!--Ao colocar a tag: <a> fora da tag: <figure> tudo em que for clicado será considerado como link. Dessa forma fica mais semantico -->
+
+<!--
+  <figure>
+    <img
+      src="https://source.unsplash.com/random"
+      alt="Imagem do Titulo"
+      title="Colocar um titulo na imagem"
+      height="250px"
+    />
+    <figcaption>Colocar um titulo na imagem</figcaption>
+  </figure>
+</a>
+-->
+
+<!--
+      SVG <svg>
+        - É uma marcação, estilo html, mas não é para textos, e sim para fazer imagens. Possuimos elementos para gerar formas. 
+
+        Para entender melhor
+         - Imagem rasterizada (construção de uma imagem via pixels) x Imagem vetorizada (uma imagem feita via algoritmo, ou seja, com maior procesamento)
+
+        Beneficios (Imagem vetorizada):
+        - mais leve
+        - mais detalhada
+        - maior acessibilidade e SEO
+        - Pode ser editada via CSS ou atributos
+
+        Desvantagens:
+        - Pode ser mais complicada de trabalhar;
+        - Quanto mais complexa a imagem, mais trabalho para o navegador;
+        - Navegados mais antigos não possuem suporte a essa tag.
+
+        Obs.: Para fotografias, ainda prefira usar imagens rasterizadas.
+        ex.: .png .jpg .jpeg
+    
+-->
+
+<!--
+    SVG na Pratica
+      cx= eixo X
+      cy= eixo Y
+      r= raio: que irá fazer o circulo aumentar. 
+      stroke: cor da borda do circulo
+      stroke-width: largura da borda
+      fill: preenchimento do circulo
+
+      Vantagens:
+      - Quando configuramos a tag <svg> manualmente conforme abaixo reduzimos as chamadas http que eo site fará de informações e arquivos extenos. Porque já estarão dentro da própria página. 
+      - Também podemos incluir um atributo global <style> e fazr alterações diretas. 
+      - Canva: É o espaço de trabalho que encontra-se descrito em: width e height.
+
+      Desvantagens:
+      - Caso deseje fazer varias repetições da tag <svg> no html, isso começa a poluir o código. Deixando o documento maior. 
+      - Não ter a possibilidade de cache (guardar alguma coisa em memoria e pegar mas tarde) que o browser executa.     
+
+
+-->
+
+<!--
+  <svg style="background-color: blue" width="200" height="200">
+    <circle
+      cx="100"
+      cy="90"
+      r="30"
+      stroke="red"
+      stroke-width="7"
+      fill="white"
+    />
+  </svg>
+
+  <svg width="300" height="200">
+    <rect
+      stroke="yellow"
+      stroke-width="7"
+      width="100%"
+      height="100%"
+      fill="red"
+    />
+  </svg>
+</a>
+-->
+
+<img src="./assets-example/ball.svg" alt="" />
+
+<!--
+Vantagens:
+    - Cria-se uma sintaxe mais familiar, mais facil de manipular.
+    - Cache do browser, fica mais limpo e mais rapido nas requisições.
+    
+Desvantagens:
+    - Dificuldade para manipular as imagens com adição de CSS
+  
+-->
+
+<!--
+      Posicionando Foguetes
+
+
+-->

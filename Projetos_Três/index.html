@@ -1,0 +1,107 @@
+<!--Tabela Básica-->
+
+<table>
+  <!--Inicio da criação da tabela-->
+  <caption>
+    <!--Irá descrever o que a tabela esta fazendo. Do que se trata-->
+    Pessoas por Idade
+  </caption>
+
+  <thead>
+    <tr>
+      <th colspan="2">Nome</th>
+      <th colspan="2">Idade</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td colspan="2">Flavio</td>
+      <!--é o conteudo da linha-->
+      <td colspan="2">40</td>
+      <!--td: é a descrição das colunas-->
+    </tr>
+    <tr>
+      <td colspan="2">Paulo</td>
+      <td colspan="2">50</td>
+    </tr>
+    <tr>
+      <td colspan="2">Pedro</td>
+      <td colspan="2">20</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td colspan="2">Total de pessoas:</td>
+      <td>02 pessoas</td>
+    </tr>
+  </tfoot>
+  <!--tr: é uma primeira linha-->
+</table>
+<!--Final da criação da tabela-->
+
+<!--Tabela Complexa-->
+
+<table>
+  <caption style="background-color: rgb(112, 112, 238)">
+    <br />
+    Tabela de Produtos Produzidos x Vendidos
+    <br />
+    <caption style="background-color: coral">
+      Nome das Lojas
+    </caption>
+  </caption>
+
+  <colgroup>
+    <col />
+    <!--Coluna-->
+    <col span="2" style="background-color: rgb(92, 4, 4)" />
+    <col span="2" style="background-color: green" />
+    <!--span: espaço da coluna-->
+  </colgroup>
+  <!--tag: que vai agrupar ou criar grupo de colunas-->
+
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <!--ocupar espaço de linhas-->
+      <th colspan="2" scope="colgroup">Loja 01: Alfa</th>
+      <!--tag: scope é o escopo, a informação sobre o agrupamento de colunas-->
+      <!--ocupar espaço de colunas-->
+      <th colspan="2" scope="colgroup">Loja 02: Beta</th>
+    </tr>
+
+    <tr>
+      <th scope="col">Produzidos</th>
+      <th scope="col">Vendidos</th>
+      <th scope="col">Produzidos</th>
+      <th scope="col">Vendidos</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <th scope="row" style="background-color: blue">Tapetes</th>
+      <th>50</th>
+      <th>30</th>
+      <th>40</th>
+      <th>20</th>
+    </tr>
+
+    <tr>
+      <th scope="row" style="background-color: blue">Vassouras</th>
+      <th>30</th>
+      <th>10</th>
+      <th>60</th>
+      <th>60</th>
+    </tr>
+
+    <tr>
+      <th scope="row" style="background-color: blue">Total</th>
+      <th>80</th>
+      <th>40</th>
+      <th>100</th>
+      <th>80</th>
+    </tr>
+  </tbody>
+</table>
