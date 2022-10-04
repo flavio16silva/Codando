@@ -1,0 +1,116 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+#titulo{
+  font-family: sans-serif;
+  color: blueviolet;
+  font-size: 40px;
+  margin: 50px;
+  text-align: center;
+
+}
+
+#subtitulo{
+  font-family: sans-serif;
+  color:blueviolet;
+  margin-left: 10%;
+}
+
+/*Checkbox*/
+#check{
+  display: inline-block;
+}
+
+/*Tag fieldser*/
+fieldset{
+  border:0;
+}
+
+/*Corpo da Página*/
+body{
+  font-family: sans-serif;
+  font-size: small;
+  color: rgb(106, 71, 138);
+  background-color: rgb(239, 171, 171);
+  margin-top: 3%;
+  margin-left: 30%;
+}
+
+/*Todas os body, inputs, checkbox, textarea e button*/
+input, select, textarea, button{
+  font-family: sans-serif;
+  font-size: 1em;
+  color: rgb(198, 14, 186);
+  border-radius: 5px;
+}
+/* Elementos de classe "grupo" nos estados das pseudoclasses "before" e "after" */
+.grupo:before, .grupo:after {
+  display: table;
+}
+
+/* Elementos de classe "grupo" nos estados das pseudoclasses "after" */
+.grupo:after{
+  clear: both;
+}
+
+/* Elementos de classe "campo" */
+.campo{
+  margin-bottom: 1em;
+}
+
+/* Elementos de classe "campo"  da tag "label"*/
+.campo label{
+  margin-bottom:2px;
+  display: block;
+  color:rgba(16, 1, 16, 0.497)
+ 
+}
+
+/* Elementos de classe "campo" e "grupo" do fielset*/
+fieldset.campo .grupo {
+  float:left;
+  margin-right: 1em;
+}
+
+.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea{
+  padding: 0.2em;
+  border: 1px solid;
+  box-shadow: 2px 2px 2px blueviolet;
+  display: block;
+}
+
+.campo select option{
+  padding-right: 1em;
+}
+
+.campo input:focus, .campo select:focus, campo textarea:focus {
+  background: #E0E0F8 ;
+}
+
+/*Elemento de classe "botão"*/
+.botao {
+  font-size: 1.2em;
+  background:rgb(198, 14, 186);
+  border: 0;
+  margin-bottom: 1em;
+  color: #ffffff;
+  padding: 0.2em 0.6em;
+  box-shadow: 2px 2px 2px rgba(0,0,0,2);
+  text-shadow: 1px, 1px, 1px rgba(0,0,0,5);
+  position: absolute;
+  top: 190%;
+  left: 7%;
+  margin-left: 30%;
+  transform: translate(-50%, -50%);
+}
+
+.botao:hover {
+  box-shadow: inset 2px, 2px, 2px rgba(0,0,0,2);
+  text-shadow: none;
+}
+
+.botao, select {
+  cursor: pointer;
+}

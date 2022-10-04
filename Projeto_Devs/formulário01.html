@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<!--Linguagem do site-->
+<html lang="pt-br">
+  <head>
+    <!--Conjunto de Caracteres-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="formulario01.css" />
+    <title>Formulário Novo Dev</title>
+  </head>
+  <body>
+    <div>
+      <h1 id="titulo">Formulário para Cadastro de Devs</h1>
+      <p id="subtitulo">
+        Esse formulário nos ajudará a identificar suas caracteristicas e
+        aptidões como desenvolvedor, seu grau de conhecimento e como podemos
+        direcionar seus estudos. <br />
+        Aqui iremos lhe encaminhar para grupos com outros devs para lhe ajudar
+        em seu crescimento e como você poderá ajudar outros em suas carreiras.
+      </p>
+      <br />
+    </div>
+
+    <!--Inicio do Formulário-->
+    <form>
+      <fieldset class="grupo">
+        <div class="campo">
+          <!--Campo do nome com legenda "nome" e CSS de classe "campo"-->
+          <h3><strong> Digite seu nome: </strong></h3>
+          <label for="nome">Nome</label>
+          <!-- Criação da lacuna para escrever o nome-->
+          <textarea
+            name="name"
+            id="name"
+            cols="70"
+            rows="1"
+            required
+          ></textarea>
+        </div>
+
+        <div class="campo">
+          <!--Campo do sobrenome com legenda "sobrenome" e CSS de classe "campo"-->
+          <h3><strong> Digite o seu Sobrenome: </strong></h3>
+          <label for="sobrenome">Sobrenome</label>
+          <textarea
+            name="sobrenome"
+            id="sobrenome"
+            cols="70"
+            rows="1"
+            required
+          ></textarea>
+        </div>
+
+        <div class="campo">
+          <!--Campo do email com legenda "email" e CSS de classe "campo"-->
+          <h3><strong> Digite o seu email: </strong></h3>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required />
+        </div>
+      </fieldset>
+
+      <fieldset class="grupo">
+        <div class="campo">
+          <!--Campo do nascimento e CSS de classe "campo"-->
+          <h3><strong> Informe a data de Nascimento </strong></h3>
+          <label>Data de Nascimento</label>
+          <input type="date" name="data" id="data" />
+        </div>
+
+        <div class="campo">
+          <!--Campo do idade e CSS de classe "campo"-->
+          <h3><strong> Qual a sua idade? </strong></h3>
+          <label>Idade</label>
+          <input type="text" name="idade" id="idade" />
+        </div>
+
+        <div class="campo">
+          <!--Campo para escolher o sexo (select option) e css de class "campo"-->
+          <h3><strong> Qual o seu sexo? </strong></h3>
+          <label>Sexo</label>
+          <select name="Sexo" id="sexo">
+            <option value=""></option>
+            <option value="Masculino">Masculino</option>
+            <option value="Feminino">Feminino</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <fieldset class="grupo">
+        <div class="campo">
+          <!--Campo do Estado e CSS de classe "campo"-->
+          <h3><strong> Qual o seu Estado? </strong></h3>
+          <label>Estado</label>
+          <input type="text" name="estado" id="estado" />
+        </div>
+
+        <div class="campo">
+          <!--Campo da Cidade e CSS de classe "campo"-->
+          <h3><strong> Qual a sua cidade? </strong></h3>
+          <label>Cidade</label>
+          <input type="text" name="cidade" id="cidade" />
+        </div>
+      </fieldset>
+
+      <fieldset class="grupo">
+        <div class="campo">
+          <h3><strong> Jornada Dev </strong></h3>
+          <p>
+            Com o intuito de compreender sua jornada como Dev, quais caminhos
+            para estudar conteúdo você tem utilizado?
+          </p>
+          <ol>
+            <li>Sites de pesquisa;</li>
+            <label>Citar 3 sites:</label
+            ><br />
+            <textarea name="site" id="site" cols="50" rows="1"></textarea>
+            <li>Vídeos no Youtube;</li>
+            <label>Citar 3 canais:</label
+            ><br />
+            <textarea name="video" id="video" cols="50" rows="1"></textarea>
+            <li>Faculdade;</li>
+            <label>Citar nomes:</label
+            ><br />
+            <textarea
+              name="faculdade"
+              id="faculdade"
+              cols="50"
+              rows="1"
+            ></textarea>
+            <li>Cursos técnicos;</li>
+            <label>Citar até 3 cursos:</label
+            ><br />
+            <textarea name="curso" id="curso" cols="50" rows="1"></textarea>
+
+            <!--Campo de Estudar Sozinho com legenda  e (select option) e CSS de classe "campo"-->
+            <li>Estudando sozinho;</li>
+            <label>Quais seus horários de estudo?</label
+            ><br />
+            <select name="horario" id="horario">
+              <option value=""></option>
+              <option value="manha">Manhã</option>
+              <option value="tarde">Tarde</option>
+              <option value="noite">Noite</option>
+              <option value="madrugada">Madrugada</option></select
+            ><br />
+            <li>Estudando em grupo.</li>
+            <label>Descreva a metodologia usada:</label
+            ><br />
+            <textarea name="estudo" id="estudo" cols="50" rows="1"></textarea>
+          </ol>
+        </div>
+      </fieldset>
+
+      <fieldset class="grupo">
+        <!--Campo para falar o tempo de carreira (select option) e css de class "campo"-->
+        <div class="campo">
+          <h3><strong>Quantos anos de carreira na area? </strong></h3>
+          <label>Carreira</label>
+          <select name="tempo" id="tempo">
+            <option value=""></option>
+            <option value="5">Menos de 6 meses</option>
+            <option value="4">Mais de 1 ano</option>
+            <option value="3">Entre 2 e 4 anos</option>
+            <option value="2">Entre 4 e 6 anos</option>
+            <option value="1">Acima de 6 anos</option>
+          </select>
+        </div>
+
+        <!-- Campo de desenvolvimento web com 3 opções de botões selecionáveis (radio button) e css de classe "campo" -->
+        <div class="campo">
+          <h3><strong>Qual a sua area de Atuação? </strong></h3>
+          <label>Selecionar uma das opções</label><br />
+          <label>
+            <input
+              type="radio"
+              name="dev"
+              id="dev"
+              value="Front-end"
+            />Front-end
+          </label>
+          <label>
+            <input type="radio" name="dev" id="dev" value="Back-end" />Back-end
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="dev"
+              id="dev"
+              value="Fullstack"
+            />Fullstack
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset class="grupo">
+        <!-- Campo de tecnologias para escolha de 1 ou mais opções para marcar (checkbox) e css de classe "campo" -->
+        <div id="check">
+          <h3>
+            <strong>
+              Quais as linguagens e/ou tecnologias que você conhece?
+            </strong>
+          </h3>
+          <label>Tecnologias:</label><br />
+          <input type="checkbox" name="tec1" id="tec1" value="java" />
+          <label for="tec1">JAVA</label>
+          <input type="checkbox" name="tec2" id="tec2" value="php" />
+          <label for="tec2">PHP</label>
+          <input type="checkbox" name="tec3" id="tec3" value="HTML" />
+          <label for="tec3">HTML</label>
+          <input type="checkbox" name="tec4" id="tec4" value="CSS" />
+          <label for="tec4">CSS</label>
+          <input type="checkbox" name="tec5" id="tec5" value="JAVASCRIPT" />
+          <label for="tec5">JAVASCRIPT</label>
+          <input type="checkbox" name="tec6" id="tec6" value="PYTHON" />
+          <label for="tec6">PYTHON</label>
+          <input type="checkbox" name="tec7" id="tec7" value="C#" />
+          <label for="tec7">C#</label>
+          <input type="checkbox" name="tec8" id="tec8" value="C++" />
+          <label for="tec8">C++</label>
+          <input type="checkbox" name="tec9" id="tec9" value="C" />
+          <label for="tec9">C</label>
+          <input type="checkbox" name="tec10" id="tec10" value="Swift" />
+          <label for="tec10">Swift</label>
+        </div>
+
+        <!--Campo para desenvolvimento (select option) e css de class "campo"-->
+        <div class="campo">
+          <h3>
+            <strong>
+              Em que nível de desenvolvimento você se classifica?
+            </strong>
+          </h3>
+          <label for="nivel">Nível</label>
+          <select name="Nível" id="nivel" required>
+            <option value=""></option>
+            <option value="Júnior">Júnior</option>
+            <option value="Pleno">Pleno</option>
+            <option value="Sênior">Sênior</option>
+            <option value="Master">Master</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <!--Caixa de Texto-->
+      <div class="campo">
+        <h3><strong> Fale sobre você </strong></h3>
+        <p>
+          <label
+            >Conte-nos sobre suas experiências e expectativas para o mercado de
+            trabalho.</label
+          >
+        </p>
+        <textarea name="fale" id="fale" cols="50" rows="10"></textarea><br />
+      </div>
+
+      <!--Botão para envio do formulário-->
+      <button class="botao" type="submit" onsubmit="">
+        Clique para enviar
+      </button>
+    </form>
+  </body>
+</html>
