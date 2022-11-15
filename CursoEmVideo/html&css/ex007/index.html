@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Outras formatações</title>
+  </head>
+  <body>
+    <!--Formatando Codigo  -->
+    <h2>Codigo Fonte</h2>
+
+    <!--Tag CODE  -->
+    <p>
+      O comando <code>document.getElementyById('teste')</code> é escrito em
+      linguagem javaScript
+    </p>
+
+    <!--Usando a tag: pre para manter a identação do codigo no html-->
+    <!--Shift+TAB o codigo recua para esquerda e TAB somente ele avança para direita-->
+    <pre>
+      <code>
+  num = int(input ('Digite um número'))
+  if num % 2 == 0:
+    print(f' O numero {num} é PAR')
+  else
+    print(f' O número {num} é IMPAR')
+  print('Fim do Programa')
+      </code>
+    </pre>
+
+    <!--Citações simples, no uso da tag:q as aspas são incluídas-->
+    <h2>Citações simples e completas</h2>
+    <p>
+      Como diria um pai de um amigo: <q>o computador é um burro muito rápido</q>
+    </p>
+
+    <!--Citações completas-->
+    <p>Segundo Mauricio Samy, no seu livro HTML:</p>
+    <blockquote
+      cite="https://www.google.com.br/books/edition/Fundamentos_de_HTML5_e_CSS3/2iPYCQAAQBAJ?hl=pt-BR&gbpv=1&dq=html&printsec=frontcover"
+    >
+      Como qualquer idioma, a HTML também tem suas regras de sintaxe e escrita,
+      e um arquivo de texto escrito em conformidade com essas regras consiste-se
+      na chamada marcação HTML ou estrutura HTML.
+    </blockquote>
+
+    <!--Abreviações, com uso da tag: abbr/ ao passar o mouse será mostrado o significado da abreviação.-->
+    <h2>Abreviações</h2>
+    <p>
+      Estudando <abbr title="HyperText Markup Language">HTML</abbr> e
+      <abbr title="Cascading Style Sheets">CSS</abbr> para melhorar meu
+      curriculo.
+    </p>
+
+    <!--Texto Invertido-->
+    <!--rtl - dá direita para esquerda-->
+    <!--ltr - dá esquerda para direita-->
+    <h2>Texto Invertido (rtl e ltr)</h2>
+    <p><bdo dir="rtl">Treinando o uso dos textos invertidos</bdo></p>
+  </body>
+</html>
