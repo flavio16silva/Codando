@@ -12,7 +12,7 @@
     <!-- tag href: significa hipertexto de referencia-->
     <!-- tag target: significa alvo-->
     <!-- tag _blank: significa janela em branco-->
-    <!-- tag rel="extertnal": significa acesso externo, fora do meu site-->
+    <!-- tag rel="external": significa acesso externo, fora do meu site. Dessa forma o google saberá dessa informação -->
 
     <p>
       Você pode acessar o
@@ -25,10 +25,23 @@
       <a href="https://www.youtube.com">canal do Youtube</a>
     </p>
 
-    <h2>Usando links internos</h2>
-    <p>
-      Para acessar a Segunda Página do meu site, use esse link
-      <a href="pag002.html"></a>
-    </p>
+    <h1>Usando links Internos</h1>
+    <!--Incluir rel='next', para que o google identifique onde será a proxima pagina na busca do site.-->
+    <p> Para acessar a minha <a href="pag002.html" rel="next" target="_self">Segunda Página</a> clicar no link.</p>
+
+     <!--Incluir target='_self', significa: abrir na propria aba-->
+
+    <p> Acesse também <a href="noticias/pag003.html" rel="next" target="_self">Terceira Página</a> clicar no link.</p>
+
+    <h1>Links para Downloads</h1>
+
+    <!--Incluir type="application/pdf", significa: abrir em pdf-->
+    <!--Para mais informações de downloads acessar o site: https://www.iana.org/assignments/media-types/media-types.xhtml -->
+
+    <ul type="square" >
+      <li><a href="baixar/TesteDown.pdf" download="testedown.pdf" type="application/pdf">Baixar o livro em PDF</a></li>
+      <li><a href="baixar/TesteDown.rar" download="testedown.rar" type="application/zip">Livro compactado em Zip</a></li>
+    </ul>
+
   </body>
 </html>
