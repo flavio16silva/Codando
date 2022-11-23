@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Midias em HTML5</title>
+</head>
+<body>
+  <h1>Imagem Dinâmica</h1>
+  
+  <p>Tente abrir esse site em vários dispositivos diferentes ou aumente e diminua o tamanho do seu navegador.</p>
+  <!--Essa tag picture irá trazer uma imagem dentro dela atraves da tag img. 
+  SRC ou fonte/raiz-->
+
+  <!--Para cada source criado, deve sempre colocar acima do ultimo anterior/ "Atualizar a pagina"-->
+  <picture>
+    <!--source:2/ se carregar a menos de 750 carregará a "foto p"-->
+    <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+
+    <!--source:1/ se carregar a menos de 1050 carregará a "foto m"-->
+    <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+
+    <!--Imagem base "grande"-->
+    <img src="imagens/foto-g.png" alt="imagem flexivel">
+  </picture>
+
+</body>
+</html>
