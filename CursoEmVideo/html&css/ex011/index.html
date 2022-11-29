@@ -1,12 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vídeo para Web</title>
-</head>
-<body>
-  <!--Video para hospedagem incluir em site até 1080p-->
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vídeo para Web</title>
+  </head>
+  <body>
+    <!--Video para hospedagem incluir em site até 1080p-->
+
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Este vídeo está hospedado em meu próprio servidor</p>
+
+    <!--tag: poster para inclusão de capa no vídeo-->
+
+    <video width="250" poster="imagens/supermario.jpg" controls autoplay loop>
+      <!--Incluir todas as extensões para atender todos os navegadores. "Aqui esta consumindo dados do servidor"-->
+
+      <source src="midia/meu-video.m4v" type="video/m4v" />
+      <source src="midia/meu-video.webm" type="video/webm" />
+      <source src="midia/meu-video.mp4" type="video/mp4" />
+      <source src="midia/meu-video.ogv" type="video/ogg" />
+      <p>Seu navegador não tem compatibilidade com reprodução de vídeos</p>
+    </video>
+
+    <h1>Inserindos vídeos do Youtube</h1>
+    <!--Basta clicar no youtue em incorporar e add o link aqui. "Não consome dados do servidor, mas do Youtube"-->
+
+    <iframe
+      width="360"
+      height="250"
+      src="https://www.youtube.com/embed/i7L19SOqbNM"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+
+
+  <h1>Vídeos legais para Assistir</h1>
+  
+   <a href="https://www.youtube.com/watch?v=Ejkb_YpuHWs&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n" target="_self" rel="external"> <img src="imagens/thumb-html.png" alt="Curso de HTML"> </a>
+
+  <a href="https://www.youtube.com/watch?v=1-w1RfGIov4&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1" target="_self" rel="external"> <img src="imagens/thumb-js.png" alt="Curso JAVASCRIPT"> </a> <br>
+
+  <a href="https://www.youtube.com/watch?v=iT6E92Kt38o&list=PLHz_AreHm4dn1JHgN9wpbIUhzZmycYQXW" target="_self" rel="external"> <img src="imagens/thumb-hardware.png" alt="Curso de Hardware"> </a>
+
+  <a href="https://www.youtube.com/watch?v=nIHq1MtJaKs&list=PLHz_AreHm4dm6wYOIW20Nyg12TAjmMGT-&index=1&t=3s" target="_self" rel="external"> <img src="imagens/thumb-python.png" alt="Curso de Python"> </a>
+
+  </body>
 </html>
