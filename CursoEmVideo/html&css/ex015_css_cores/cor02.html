@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gradiente em CSS</title>
+  </head>
+
+  <!--Fazendo degradê no HTML-->
+
+  <!--Usando estilo local-->
+  <style>
+    * {
+      /* Configuração global da CSS*/
+      height: 100%;
+    }
+
+    body {
+      /*Primeiro indica a direção: (to "right", "cima"): direita começa na primeira cor: branca e terminando na cor azul  */
+
+      /*Podemos inserir as cores em GRAUS: "Numero" deg , podendo ter valores negativos ou seja, o oposto*/
+      /*Exemplo 1
+      
+      OBS.: PARA UMA COR TER MAIS ESPAÇO DE TELA BASTA ACRECENTAR O VALOR APÓS A COR EM PORCENTAGEM: 50% */
+      background-image: linear-gradient(
+        45deg,
+        #6254c5 50%,
+        #b93290,
+        #dd2e71,
+        #e8385e,
+        #ff872a,
+        #ffda7f
+      ); 
+
+      /*Exemplo 2*/
+      /*Usando radial
+      background-image: radial-gradient(
+        circle,
+        #6254c5,
+        #b93290,
+        #dd2e71,
+        #e8385e,
+        #ff872a,
+        #ffda7f
+      ); */
+
+      /* Deixa o fundo fixo*/
+        /* OBS.: USO DE PALETA PARA CORES ENTRE  IGUAL A 3 ATÉ 5 CORES*/
+      background-attachment: fixed;
+    }
+  </style>
+
+  <body>
+    <h1>Testando Gradiente</h1>
+    
+  </body>
+</html>
+
+
+
