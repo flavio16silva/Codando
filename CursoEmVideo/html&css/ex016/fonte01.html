@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trabalhando com Fontes em CSS</title>
-</head>
-<style>
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-    /*Medidas Absolutas: cm, mm, in, px, pt, pc(paica)
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trabalhando com Fontes em CSS</title>
+  </head>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      /*Medidas Absolutas: cm, mm, in, px, pt, pc(paica)
 
     Medidas Relativas: em, ex, rem, vw, vh, %
     em - medida relativa ao tamanho atual da fonte
@@ -20,17 +20,61 @@
     Geralmente os navegadores usam font-size de 16px = 1em
     Recomendação oficial usar px ou em.
      */
-     font-size: 2em;
-  }
+      font-size: 1em;
+      /* font-weight: normal;
+     font-style: italic;
+     text-decoration: underline; */
+
+      /*font-weight: peso da fonte ;  lighter, normal, bold, bolder*/
+
+      /* weight: peso
+        width: largura 
+        height: altura */
+    }
+
+    h1 {
+      font-family:Arial, Helvetica, sans-serif;
+      font-weight: bolder;
+      font-size: 3em;
+      font-style: italic;
+
+      /*shortland font - junção de todas as fontes em uma única linha:
+      Sempre manter essa ordem:
+
+      -> font-style/ font-weight/ font-size/ font-family    
+       italic bolder 3em Arial, Helvetica, sans-serif;
+       
+       */
+
+    }
+
+    h2 {
+        font: bold 2em Arial, Helvetica, sans-serif;
+    }
+
+
+  </style>
 
   
-</style>
-<body>
-  
+  <body>
     <h1>Testando Fontes no HTML</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda adipisci repudiandae, quam saepe cum exercitationem quia iusto ipsam soluta veritatis ipsa voluptas fugiat esse quis ad blanditiis. Vero, alias distinctio.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae facere consectetur quis ratione quia! Mollitia nam doloribus natus aspernatur recusandae deserunt sunt ratione. Dignissimos pariatur saepe qui exercitationem, nostrum inventore.</p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+      adipisci repudiandae, quam saepe cum exercitationem quia iusto ipsam
+      soluta veritatis ipsa voluptas fugiat esse quis ad blanditiis. Vero, alias
+      distinctio.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae facere
+      consectetur quis ratione quia! Mollitia nam doloribus natus aspernatur
+      recusandae deserunt sunt ratione. Dignissimos pariatur saepe qui
+      exercitationem, nostrum inventore.
+    </p>
     <h2>Subtitulo do Exercicio</h2>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem natus optio, officiis ipsa qui unde sapiente consequuntur esse, laudantium assumenda, dolore quidem! Vero, velit nam recusandae iure tempore quam ex.</p>
-</body>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem natus
+      optio, officiis ipsa qui unde sapiente consequuntur esse, laudantium
+      assumenda, dolore quidem! Vero, velit nam recusandae iure tempore quam ex.
+    </p>
+  </body>
 </html>
