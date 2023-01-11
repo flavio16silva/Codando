@@ -1,0 +1,51 @@
+@charset "UTF-8";
+/*Evitar problemas com acentuação ou caracteres especiais incluir a regra padrão no começo do css
+
+Em HTML é id    = em CSS é # (hashtag) (só pode um elemento por pagina HTML)
+Em HTML é class = em CSS é . (ponto) (pode vários elementos)
+
+Dar nome as classes pela funcionalidade e não pela forma.
+*/
+
+body {
+  background-color: #e196f6;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Esse h1 por padrão tem essa configuração*/
+h1 {
+  color:#8F07B5;
+}
+
+/*Pode ser chamado: h1#principal ou #principal
+Aqui esta o id */
+h1#principal {
+  text-align: center;
+  background-color:#61057A;
+  color: white;
+}
+
+h2 {
+  color: #AE09DB;
+  
+}
+
+/*Não precisa incluir o nome do h2, basta chamar pelo .
+Aqui estão as class */
+.basico {
+ color: #AE09DB;
+
+}
+
+.intermediario {
+ color: #998d07;
+}
+
+.avancado {
+ color: #db1709;
+
+}
+
+.destaque {
+  background-color: rgba(142, 41, 237, 0.648);
+}
