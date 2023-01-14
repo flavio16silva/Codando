@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemplo de Hover</title>
+
+    <!--Sempre que usar CSS dentro do HTML, inserir após o title-->
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        
+      }
+
+      /* Ao usar esse símbolo: > significa que o paragrafo que esta dentro ou é "filho" de uma DIV */  
+      div > p {
+          display: none;
+      }
+
+      /* Ao passar o mouse no paragrafo que encontra-se dentro da DIV*/ 
+      div:hover > p {
+          display:block;
+          color:white;
+          background-color: red;
+          width: 330px;
+      }
+      
+      #p2 {
+        font-style: italic;
+        font-weight: bolder;      
+      
+      }
+      
+      div:hover {
+        color: red;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>Exemplo de Hover</h1>
+    <p id="p1">Passe o mouse sobre o texto abaixo</p>
+    <div>
+      Passe o mouse aqui - dentro da div
+      <p id="p2">TEXTO ESCONDIDO - SURPRESA AQUI...</p>
+    </div>
+    <p>Fim do Exemplo...</p>
+  </body>
+</html>
