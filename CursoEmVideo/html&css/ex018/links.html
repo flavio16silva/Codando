@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Links</title>
+
+    <style>
+      /* SELETORES PERSONALIZADOS
+      #  = id
+      .  = class
+      :  = pseudo-class
+      :: = pseudo-element
+      >  = children
+
+    */
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      /*Cor padrão/generica para todos os Sites*/
+      a {
+        color: red;
+        text-decoration: none; /*Para retirar o sublinhado*/
+        font-weight: bold; /*colocar em negrito*/
+      }
+
+      /*Sites visitados. Uso de uma pseudo-class: visited*/
+      a:visited {
+        color: darkred;
+      }
+
+      /*Ao passar o mouse*/
+      a:hover {
+        color: aqua;
+        text-decoration: underline;
+      }
+
+      /*Cor ativa ao clicar do mouse*/
+      a:active {
+        color: burlywood;
+      }
+
+      /*Acrescentar informações antes ou depois do link criado
+      a::before {
+        content: '↻ ';
+        text-decoration: none;
+        color: darkgray;
+        font-weight: normal;
+      }
+
+      a::after {
+        content: ' ↺';
+        text-decoration: none;
+        font-weight: normal;
+        color: darkgray;
+      } */
+
+      /*As informações acima comentadas foram substituidas pela criação de uma class = especial para tratar um link com exclusividade, como exemplo (SITE DO TERRA)*/
+
+      .especial {
+        background-color: rgba(83, 83, 236, 0.576);
+      }
+
+      /*Pseudo-element - depois*/
+      .especial::after {
+        content: ' ↺';
+        text-decoration: none;
+        font-weight: normal;
+        color: rgb(2, 17, 106);
+      }
+
+      /*Pseudo-element - antes */
+      .especial::before {
+        content: '↻ ';
+        text-decoration: none;
+        color: rgb(2, 17, 106);
+        font-weight: normal;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Personalizando os Links</h1>
+
+    <!-- Quando criamos links para acesso a sites:
+    Sites não visitados ficam na cor azul
+    Sites visitados ficam na cor vermelha
+  -->
+
+    <!-- uso da tag target="_blank" para abrir o site em outra pagina.-->
+    <ul>
+      <li><a href="https://www.uol.com.br" target="_blank">Site do UOL</a></li>
+      <li><a href="https://www.youtube.com">Canal do Youtube</a></li>
+      <li>
+        <!-- Se desejar podemos tratar um link com exclusividade criando uma class para ele -->
+        <a href="https://www.terra.com.br" target="_blank" class="especial"
+          >Site do Terra</a
+        >
+      </li>
+    </ul>
+  </body>
+</html>
