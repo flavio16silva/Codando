@@ -1,0 +1,106 @@
+@charset "UTF8";
+
+/*Configurações Gerais*/
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  
+}
+
+body {
+  background-color:#9413A8;
+}
+
+/*Texto Central*/
+main {
+  background-color:#D67EF2;
+  border-radius: 30px;
+  box-shadow: 5px 5px 10px;
+  width: 1000px; 
+  padding: 50px;
+  margin: auto;
+  
+}
+/*Imagem do site
+.image {
+  background-color:#a26bb3;
+} */
+
+/*Titulo Principal*/
+.titulo {
+  text-align: center;
+  color:#980caef5;
+  font-size: 32px;
+  font-weight: bolder;
+
+}
+
+/*Titulo introdutório*/
+.frase {
+  text-align: justify;
+  line-height: 1.8;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/*Titulo das sessões*/
+.subtitulo .bloco {
+  font-size: 28px;
+}
+
+/*Subtitulo da sessão Dados Pessoais*/
+.subtitulo h3 {
+  font-size: 18px;
+}
+
+/*Nome, sobrenome, email, Nascimento, idade, sexo, Estado, Cidade*/
+.subtitulo .dados {
+  font-size: 16px;
+
+}
+
+/*Input: Textarea: Nome, Sobrenome e Email*/
+textarea {
+  border-radius: 7px;
+  resize: none;
+  padding: 7px;
+
+}
+
+/*Input=Text: idade, estado e cidade*/
+input[type=text] {
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 5px;
+  padding: 7px;
+  text-align:left;
+
+} 
+
+input[type=date] {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:17px;
+  font-weight: bold;
+  border-radius: 5px;
+  padding-left: 10px;
+  height: 25px;
+
+}
+
+.select {
+  appearance: none;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  border-radius: 5px;
+  display: block;
+
+}
+
+.subtitulo > select {
+  border: none;
+  width:21%;
+  height: 30px;
+  
+
+}
