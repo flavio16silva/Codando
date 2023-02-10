@@ -6,21 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Treinando Box-model</title>
     <style>
-      h1 {
+      h1 { /*elemento box-level*/
+        
         background-color: lightblue;
+        
+        /*Box-size*/
         height: 300px;
         width: 300px;
-        border-width: 10px;
-        border-style: solid;
-        border-color: darkslategray;
 
-        padding-top: 10px;
+        /*para transformar um elemento de box-level para inline basta incluir a propriedade: display: inline;*/
+
+        /*border-width: 10px;
+        border-style: solid;
+        border-color: darkslategray;*/
+
+        /*Shorthand do Border*/
+        border: 10px solid darkslategray;
+
+        /*Shorthand do Padding - como os valores são iguais pode informar apenas um valor de 10px*/
+        padding: 10px 10px 10px 10px;
+
+        /*padding-top: 10px;
         padding-right: 10px;
         padding-bottom: 10px;
-        padding-left: 10px;
+        padding-left: 10px; */
+
+        /*Shorthand do margin - nesse caso temos uma medida diferente e não podemos colocar um unico valor representativo
+         - inclusão do auto para centralizar o elemento na pagina*/
+        margin: 20px auto 40px auto;
+
+        /*margin-top: 20px;
+        margin-right: 20px;
+        margin-bottom: 40px;
+        margin-left: 20px;*/
+
+        /*centralizando com margin. calcula de acordo o tamanho da pagina
+        margin: auto;*/
+
+        /*Shorthand do outline*/
+        outline: 5px dashed crimson;
+
+        /*outline-width: 5px;
+        outline-style: dashed;
+        outline-color: crimson; */
       }
 
-      a {
+      a { /*elemento in-line-level*/
+
+        /*para transformar um elemento de inline-level para box-level basta incluir a propriedade: display: block;*/
+        
         border-width: 10px;
         border-style: solid;
         border-color: red;
@@ -34,6 +68,9 @@
   </head>
   <body>
     <h1>Testando posicionamento de Box-model</h1>
-    <p>Lorem ipsum dolor sit amet consectetur <a href="#">Links são exemplos de caixas inline-level</a>. Hora de testar</p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur
+      <a href="#">Links são exemplos de caixas inline-level</a>. Hora de testar
+    </p>
   </body>
 </html>
