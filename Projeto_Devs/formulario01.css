@@ -12,14 +12,24 @@ body {
   background-color:#9413A8;
 }
 
-/*Texto Central*/
-main {
+/*Cabeçalho*/
+header{
   background-color:#D67EF2;
   border-radius: 30px;
   box-shadow: 5px 5px 10px;
   width: 1000px; 
+  padding: 40px;
+  margin: 15px auto;
+}
+/*Texto Central*/
+
+main {
+  background-color:#D67EF2;
+  border-radius: 30px;
+  box-shadow: 5px 5px 10px;
+  width: 981px; 
   padding: 50px;
-  margin: auto;
+  margin: 10px auto;
   
 }
 /*Imagem do site
