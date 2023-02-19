@@ -21,7 +21,7 @@
       <a href="#">Curiosidades</a>
       <a href="#">Fale Conosco</a>
     </nav>
-    
+
     <main>
       <article>
         <h1>História do Mascote do Android</h1>
@@ -52,7 +52,14 @@
           criação de um mascote.
         </p>
 
-        <img src="imagens/dan-droids.png" alt="Primeiro Mascote do Android" />
+        <!--para imagem dinâmica (que altera de acordo com a largura da tela).-->
+        <picture>
+          <source
+            media="(max-width: 670px)"
+            srcset="imagens/dan-droids-pq.png"
+          />
+          <img src="imagens/dan-droids.png" alt="Primeiro Mascote do Android" />
+        </picture>
 
         <p>
           Essa primeira versão bizarra até foi batizada em homenagem ao seu
@@ -69,10 +76,13 @@
           pequeno robô de uma maneira mais agradável.
         </p>
 
-        <img
-          src="imagens/irina-blok.jpg"
-          alt="irina Blok, criadora do Bugdroid"
-        />
+        <picture>
+          <source media="(max-width: 670px)" srcset="imagens/irina-blok-pq.jpg">
+          <img
+            src="imagens/irina-blok.jpg"
+            alt="irina Blok, criadora do Bugdroid"
+          />
+        </picture>
 
         <p>
           A ideia principal da Irina era representar tudo graficamente com
@@ -81,7 +91,7 @@
           <strong>Bugdroid</strong>, o novo mascote do Android.
         </p>
 
-        <img src="imagens/bugdroid.png" alt="Bugdroid" />
+        <img src="imagens/bugdroid.png" class="pequena" alt="Bugdroid" />
 
         <p>
           A principal inspiração para os traços do novo
