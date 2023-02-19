@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+  font-family: 'Android';
+  src: url('/CursoEmVideo/html&css/ex021/fontes/idroid.otf') format('opentype');
+  font-weight: normal;
+}
+
+/*Criação de Variaveis no CSS
+ - root é a raiz de todas as variaveis e consta a base para todo o site
+ - Para criar uma variavel basta incluir --nomedavariavel: valor; 
+ - Para pesquisar as cores basta apertar CTRL + Espaço*/
+
+:root {
+    --cor1: #8DD7FF; /*Cor mais clara*/
+    --cor2: #07A3F7;
+    --cor3: #0687CC;
+    --cor4: #044F78;
+    --cor5: #011578; /*Cor mais escura*/
+
+    --fonte-padrão: Arial, Verdana, Helvetica, san-serif;
+    --fonte-destaque:'Bebas Neue', cursive;
+    --fonte-android:'Android', cursive;
+
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color:var(--cor1);
+  font-family: var(--fonte-destaque);
+}
+
+header {
+  background-color: var(--cor4);
+}
+
+header > h1 {
+  color:white;
+  font-family: var(--fonte-destaque);
+}
+
+header > p{
+  color: white;
+}
+
+nav {
+  background-color: var(--cor5);
+}
+
+main {
+  background-color: white;
+}
+main h1 {
+  color: var(--cor5);
+  font-family: var(--fonte-android);
+}
+
+main h2 {
+  font-family: var(--fonte-android);
+}
+
+footer {
+  background-color: var(--cor5);
+  color: white;
+}
