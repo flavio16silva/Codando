@@ -15,4 +15,56 @@ Uma imagem que é carregada como background (imagem de fundo), NÃO faz parte do
 
 Lembre-se, muito cuidado com o tamanho das imagens de fundo que você inserir (peso do arquivo - KB, MB), se você trabalhar com imagens em resolução muito alta o seu site irá ficar lento. Então ajuste a resolução, peso do arquivo e suas medidas de forma que não prejudique o carregamento do seu site. Caso contrário ele não será valorizado pelos principais mecanismos de busca.
 
+=====================================================================================================================
+A partir de agora iremos aprender sobre algumas Propriedades de Estilo que servem para personalizar as imagens de fundo que inserimos no nosso site.
+
+PROPRIEDADE - BACKGROUND-SIZE:
+
+Como nós já sabemos, por PADRÃO imagens de fundo são carregadas e exibidas no seu tamanho total, na sua dimensão original. 
+
+Uma coisa que podemos fazer é alterar esse comportamento padrão e REDIMENSIONAR o tamanho da imagem de fundo de forma personalizada. Para fazer isso, usamos a Propriedade de Estilo " background-size ", essa propriedade configura o tamanho das imagens de fundo.
+
+Existem alguns tipos de valores aceitos por essa propriedade, mas no momento e forma inicial vamos entender um pouco sobre somente um desses valores: " largura x altura "
+
+Nesse valor, informamos em sequência as duas dimensões da imagem ( largura e altura ), nesse tipo de valor devemos inserir essas duas medidas para definir e especificar o tamanho que queremos... Como por exemplo " 100px 100px ". Obs.: Como nesse tipo de valor inserimos as medidas de largura e altura de forma "manual", cuidado para não acabar distorcendo a sua imagem, insira medidas proporcionais de acordo com a sua imagem.
+
+Você também pode inserir somente a primeira medida como valor (largura) e o sistema já calcula a segunda (altura) de forma proporcional, é muito útil nesse aspecto.
+
+Nota: Em imagens de fundo configuradas especificamente com a propriedade e tipo de valor exemplificado acima, se aumentarmos ou diminuirmos o tamanho do nosso navegador (viewport), isso não afetará no tamanho definido para a imagem. As imagens ficam fixas do tamanho que especificamos na propriedade.
+
+PROPRIEDADE - BACKGROUND-REPEAT:
+
+Como nós também já sabemos, por PADRÃO imagens de fundo são carregadas e exibidas de forma "repetida" e em blocos, até cobrir a extensão de toda a caixa, isso quando o tamanho da caixa é maior que o tamanho da imagem.
+
+Uma coisa que podemos fazer é alterar esse comportamento padrão e configurar um modo de exibição personalizado. Para fazer isso, usamos a Propriedade de Estilo " background-repeat ", essa propriedade configura a aplicação do background.
+
+Para essa Propriedade de Estilo, existem quatro valores diferentes, que são: 
+
+repeat (Esse é o valor padrão, se não determinarmos nada, é esse valor que vai prevalecer. Ele faz justamente a imagem ter esse comportamento "repetido" e em blocos na tela inteira se a caixa for maior que a imagem)
+
+no-repeat (Faz com que a imagem não se repita, insere uma única imagem como background)
+
+repeat-x (Posiciona imagens "repetidas" de forma horizontal em uma fileira, por padrão sempre partindo do canto superior esquerdo)
+
+repeat-y (Posiciona imagens "repetidas" de forma vertical em uma fileira, por padrão sempre partindo do canto superior esquerdo)
+
+Nota: Como apresentado, o ponto de partida padrão do bloco de imagens de fundo, a posição de referência de início das repetições, é sempre no canto superior esquerdo (top left), mais pra frente veremos que é possível mudar essa posição inicial padrão.
+
+Exemplo geral:
+
+div {
+            background-image: url(imagens/exemplo.gif);
+            background-size: 350px;  /*Apenas um valor - Adaptação proporcional automática do img */
+            background-repeat: no-repeat;
+        }
+
+
+Obs.:
+A imagem se repetirá automaticamente, em seu tamanho padrão;
+
+Definindo um tamanho para imagem:
+
+	background-size: 100px 100px;
+
+Repetição de imagem: (a partir do canto superior direito)     
 -->
