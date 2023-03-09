@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alinhamento Vertical</title>
+
+  <style>
+    #container {
+      background-image: url('imagens/target001.png');
+      background-size: 100% 100%; /*para ocupar toda a pagina*/
+      
+       position: relative; /*todo posisionamento de um box, já é por padrão relative*/
+       height: 96vh; /*altura anterior - 500px*/
+       padding: 10px;
+       background-color: purple; 
+
+    }
+
+    #conteudo {
+      background-image: url('imagens/target001.png');
+      background-size: 100% 100%;
+        
+        position: absolute;
+        height: 200px;
+        width: 400px; /*largura*/
+        background-color: yellow;
+       /* margin: auto; (só serve para alinhamento horizontal)*/
+
+       left: 50%; /*medidas iniciais - 100px*/
+       top: 50%;  /*medidas iniciais - 200px*/
+
+       transform: translate(-50%, -50%); /*centralização do alvo*/
+                  /*(-20px, -20px) - medida anterior*/
+    }
+
+    .p {
+      font-family: 'Courier New', Courier, monospace;
+      font-style: italic;
+      color:black;
+      font-weight: bolder;
+      text-align:left;
+      font-size: 30px;
+      padding: 10px;
+    }
+  </style>
+
+</head>
+<body>
+  
+  <section id="container">
+      <p class="p">container</p>
+    <article id="conteudo">
+      <p class="p">conteudo</p>
+    </article>
+
+  </section>
+</body>
+</html>
