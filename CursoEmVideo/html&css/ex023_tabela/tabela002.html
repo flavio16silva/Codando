@@ -8,6 +8,11 @@
 
   <style>
 
+
+ /* (table) = 600px                                            -  
+    (<th scope="col" style="width: 50px;">População</th>) = 50px 
+    Restam para o tamanho da tabela                       = 550px */
+
     table {
        width: 600px;
        border-collapse: collapse;
@@ -15,15 +20,26 @@
        
     }
 
+    /*Cabeçalho da Tabela = Estado*/
     th {
       border: 1px solid black;
       padding: 5px;
      
     }
+    /*Dado da Tabela = São Paulo*/
     td {
       border: 1px solid black;
       padding: 5px;
       text-align: center;
+    }
+
+    /*população dos estados*/
+    caption {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 1.5em;
+      font-weight: bold;
+      color: white;
+      background-color: rgb(122, 119, 119);
     }
 
     thead, tfoot {
@@ -43,16 +59,24 @@
       text-align: right;
     }
   </style>
+
+    <!--Hierarquia de tabelas simples:
+	
+	    table = (tabela)
+	      table row = (tr - linha de tabela)
+	            table header	(th - cabeçalho de tabela)
+	            table data		(td - dado de tabela)          -->
 </head>
 <body>
 
     <h1>Utilizando Semântica para Tabelas Maiores</h1>
 
-    <table>
+    <table> 
+      <caption>População dos Estados</caption>
       <thead>
         <tr>
-          <th>Estado</th>
-          <th>População</th>
+          <th scope="col">Estado</th>
+          <th scope="col" style="width: 50px;">População</th>
           <th>% da População Total</th>
         </tr>
       </thead>
@@ -92,8 +116,8 @@
 
       <tfoot>
         <tr>
-          <td>Total</td>
-          <td class="num">112.004.819</td>
+          <th scope="row">Total</th>
+          <td scope="row" class="num">112.004.819</td>
           <td>58,3%</td>
         </tr>
       </tfoot>
@@ -105,7 +129,19 @@
 </body>
 </html>
 
+<!--Escopo de títulos em tabelas
 
+	   - Sem efeitos visuais, apenas semânticos;
+
+Indicando que o th é relativo aos dados que estão na mesma coluna do mesmo:
+
+	<th scope="col">    </th>	
+
+Indicando que o th é relativo aos dados que estão na mesma linha do mesmo:
+
+	<th scope="row">    </th>
+
+-->
 
 
 
