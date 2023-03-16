@@ -13,11 +13,32 @@
     (<th scope="col" style="width: 50px;">População</th>) = 50px 
     Restam para o tamanho da tabela                       = 550px */
 
+    /*A tabela teve seus campos repetidos para testar executar o teste de congelar o cabeçalho no inicio da pagina, enquanto os campos sobem com a barra de rolagem. Após terminar a tabela o cabeçalho desaparece e segue para o restante da pagina.
+    
+    ====== Antes do teste =====
     table {
        width: 600px;
        border-collapse: collapse;
        font-family: Arial, Helvetica, sans-serif;
        
+    }*/
+
+    /*Após o teste do Cabeçalho Congelado - Table*/
+
+    table {
+       width: 600px;
+       border-collapse: collapse;
+       font-family: Arial, Helvetica, sans-serif;
+       position: relative;
+       
+    }
+
+    tbody > tr:nth-child(odd) { /* Impares - Efeito Zebrado - quando cores se alternam nas linhas. Nesse exemplo a cada 2 linhas*/
+      background-color:darkkhaki;
+    }
+
+    tbody > tr:nth-child(even) { /*Pares*/
+      font-weight: bold;
     }
 
     /*Cabeçalho da Tabela = Estado*/
@@ -45,8 +66,17 @@
     thead, tfoot {
       background-color:rgb(122, 119, 119);
       color: white;
-
     }
+
+    
+    /*Teste do Cabeçalho Congelado - Table (Esse teste funciona também somente com: thead { } )*/
+    thead > tr > th{
+      position: sticky;
+      top:-1px;
+      background-color:rgb(122, 119, 119);
+    }
+
+    
     tfoot {
       font-weight: bold;
     }
@@ -58,6 +88,7 @@
     .num {
       text-align: right;
     }
+
   </style>
 
     <!--Hierarquia de tabelas simples:
@@ -112,6 +143,137 @@
             <td class="num">10.693.929</td>
             <td>5,3%</td>
           </tr>
+          <tr>
+            <td class="estado"> Rio Grande do Sul</td>
+            <td class="num">10.693.929</td>
+            <td>5,3%</td>
+          </tr>
+          <tr>
+            <td class="estado"> Rio Grande do Sul</td>
+            <td class="num">10.693.929</td>
+            <td>5,3%</td>
+          </tr>
+          <tr>
+            <td class="estado"> Rio Grande do Sul</td>
+            <td class="num">10.693.929</td>
+            <td>5,3%</td>
+          </tr>
+          <tr>
+            <td class="estado"> Rio Grande do Sul</td>
+            <td class="num">10.693.929</td>
+            <td>5,3%</td>
+          </tr>
+          <tr>
+            <td class="estado"> Rio Grande do Sul</td>
+            <td class="num">10.693.929</td>
+            <td>5,3%</td>
+          </tr>
+          <tr>
+            <td class="estado"> Rio Grande do Sul</td>
+            <td class="num">10.693.929</td>
+            <td>5,3%</td>
+          </tr>
+          <tr>
+            <td class="estado"> Rio Grande do Sul</td>
+            <td class="num">10.693.929</td>
+            <td>5,3%</td>
+          </tr>
+          <tr>
+            <td class="estado"> Rio Grande do Sul</td>
+            <td class="num">10.693.929</td>
+            <td>5,3%</td>
+          </tr>
+          <tr>
+            <td class="estado"> Rio Grande do Sul</td>
+            <td class="num">10.693.929</td>
+            <td>5,3%</td>
+          </tr>
+          <tr>
+            <td class="estado"> Rio Grande do Sul</td>
+            <td class="num">10.693.929</td>
+            <td>5,3%</td>
+          </tr>
+          <tr>
+            <td class="estado"> Rio Grande do Sul</td>
+            <td class="num">10.693.929</td>
+            <td>5,3%</td>
+          </tr>
+          <tr>
+            <td class="estado"> Rio Grande do Sul</td>
+            <td class="num">10.693.929</td>
+            <td>5,3%</td>
+          </tr>
+          <tr>
+            <td class="estado"> Rio Grande do Sul</td>
+            <td class="num">10.693.929</td>
+            <td>5,3%</td>
+          </tr>
+          <tr>
+            <td class="estado"> Rio Grande do Sul</td>
+            <td class="num">10.693.929</td>
+            <td>5,3%</td>
+          </tr>
+          <tr>
+            <td class="estado"> Rio Grande do Sul</td>
+            <td class="num">10.693.929</td>
+            <td>5,3%</td>
+          </tr>
+          <tr>
+            <td class="estado"> Rio Grande do Sul</td>
+            <td class="num">10.693.929</td>
+            <td>5,3%</td>
+          </tr>
+          <tr>
+            <td class="estado"> Rio Grande do Sul</td>
+            <td class="num">10.693.929</td>
+            <td>5,3%</td>
+          </tr>
+          <tr>
+            <td class="estado"> Rio Grande do Sul</td>
+            <td class="num">10.693.929</td>
+            <td>5,3%</td>
+          </tr>
+          <tr>
+            <td class="estado"> Rio Grande do Sul</td>
+            <td class="num">10.693.929</td>
+            <td>5,3%</td>
+          </tr>
+          <tr>
+            <td class="estado"> Rio Grande do Sul</td>
+            <td class="num">10.693.929</td>
+            <td>5,3%</td>
+          </tr>
+          <tr>
+            <td class="estado"> Rio Grande do Sul</td>
+            <td class="num">10.693.929</td>
+            <td>5,3%</td>
+          </tr>
+          <tr>
+            <td class="estado"> Rio Grande do Sul</td>
+            <td class="num">10.693.929</td>
+            <td>5,3%</td>
+          </tr>
+          <tr>
+            <td class="estado"> Rio Grande do Sul</td>
+            <td class="num">10.693.929</td>
+            <td>5,3%</td>
+          </tr>
+          <tr>
+            <td class="estado"> Rio Grande do Sul</td>
+            <td class="num">10.693.929</td>
+            <td>5,3%</td>
+          </tr>
+          <tr>
+            <td class="estado"> Rio Grande do Sul</td>
+            <td class="num">10.693.929</td>
+            <td>5,3%</td>
+          </tr>
+          <tr>
+            <td class="estado"> Rio Grande do Sul</td>
+            <td class="num">10.693.929</td>
+            <td>5,3%</td>
+          </tr>
+
       </tbody>
 
       <tfoot>
@@ -124,10 +286,42 @@
 
     </table>
 
+    <!--Criação de texto com Lorem para testar a tabela com cabeçalho fixo/congelado-->
+
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quae nihil similique accusantium eius facilis doloremque, harum accusamus, voluptate maiores obcaecati minus sapiente quidem nemo? Ullam dicta accusantium aut, pariatur officiis ex labore sint asperiores neque, veniam commodi nostrum maxime dolorum facere magni id cumque cupiditate. Quod optio obcaecati dolorem! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat aliquam at debitis perferendis, eligendi veniam dolorum, soluta ipsam quia, ratione minus molestiae. Quo, hic? Cupiditate iure libero alias sint! Modi illo nisi tenetur sed temporibus excepturi esse? Eaque aspernatur dolore necessitatibus iure voluptatem sunt quia sint maiores praesentium quis, corrupti culpa accusamus mollitia odit nostrum. Laborum veniam, officia delectus aut debitis pariatur aliquid eveniet ea fugiat assumenda voluptas fugit quasi ipsa ut quos quibusdam natus laboriosam in dignissimos consequatur quod at provident facere sed. Vero labore, dignissimos quo maxime nihil quam aspernatur repellat veniam nulla hic pariatur commodi officia autem.</p>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quae nihil similique accusantium eius facilis doloremque, harum accusamus, voluptate maiores obcaecati minus sapiente quidem nemo? Ullam dicta accusantium aut, pariatur officiis ex labore sint asperiores neque, veniam commodi nostrum maxime dolorum facere magni id cumque cupiditate. Quod optio obcaecati dolorem! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat aliquam at debitis perferendis, eligendi veniam dolorum, soluta ipsam quia, ratione minus molestiae. Quo, hic? Cupiditate iure libero alias sint! Modi illo nisi tenetur sed temporibus excepturi esse? Eaque aspernatur dolore necessitatibus iure voluptatem sunt quia sint maiores praesentium quis, corrupti culpa accusamus mollitia odit nostrum. Laborum veniam, officia delectus aut debitis pariatur aliquid eveniet ea fugiat assumenda voluptas fugit quasi ipsa ut quos quibusdam natus laboriosam in dignissimos consequatur quod at provident facere sed. Vero labore, dignissimos quo maxime nihil quam aspernatur repellat veniam nulla hic pariatur commodi officia autem.</p>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quae nihil similique accusantium eius facilis doloremque, harum accusamus, voluptate maiores obcaecati minus sapiente quidem nemo? Ullam dicta accusantium aut, pariatur officiis ex labore sint asperiores neque, veniam commodi nostrum maxime dolorum facere magni id cumque cupiditate. Quod optio obcaecati dolorem! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat aliquam at debitis perferendis, eligendi veniam dolorum, soluta ipsam quia, ratione minus molestiae. Quo, hic? Cupiditate iure libero alias sint! Modi illo nisi tenetur sed temporibus excepturi esse? Eaque aspernatur dolore necessitatibus iure voluptatem sunt quia sint maiores praesentium quis, corrupti culpa accusamus mollitia odit nostrum. Laborum veniam, officia delectus aut debitis pariatur aliquid eveniet ea fugiat assumenda voluptas fugit quasi ipsa ut quos quibusdam natus laboriosam in dignissimos consequatur quod at provident facere sed. Vero labore, dignissimos quo maxime nihil quam aspernatur repellat veniam nulla hic pariatur commodi officia autem.</p>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quae nihil similique accusantium eius facilis doloremque, harum accusamus, voluptate maiores obcaecati minus sapiente quidem nemo? Ullam dicta accusantium aut, pariatur officiis ex labore sint asperiores neque, veniam commodi nostrum maxime dolorum facere magni id cumque cupiditate. Quod optio obcaecati dolorem! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat aliquam at debitis perferendis, eligendi veniam dolorum, soluta ipsam quia, ratione minus molestiae. Quo, hic? Cupiditate iure libero alias sint! Modi illo nisi tenetur sed temporibus excepturi esse? Eaque aspernatur dolore necessitatibus iure voluptatem sunt quia sint maiores praesentium quis, corrupti culpa accusamus mollitia odit nostrum. Laborum veniam, officia delectus aut debitis pariatur aliquid eveniet ea fugiat assumenda voluptas fugit quasi ipsa ut quos quibusdam natus laboriosam in dignissimos consequatur quod at provident facere sed. Vero labore, dignissimos quo maxime nihil quam aspernatur repellat veniam nulla hic pariatur commodi officia autem.</p>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quae nihil similique accusantium eius facilis doloremque, harum accusamus, voluptate maiores obcaecati minus sapiente quidem nemo? Ullam dicta accusantium aut, pariatur officiis ex labore sint asperiores neque, veniam commodi nostrum maxime dolorum facere magni id cumque cupiditate. Quod optio obcaecati dolorem! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat aliquam at debitis perferendis, eligendi veniam dolorum, soluta ipsam quia, ratione minus molestiae. Quo, hic? Cupiditate iure libero alias sint! Modi illo nisi tenetur sed temporibus excepturi esse? Eaque aspernatur dolore necessitatibus iure voluptatem sunt quia sint maiores praesentium quis, corrupti culpa accusamus mollitia odit nostrum. Laborum veniam, officia delectus aut debitis pariatur aliquid eveniet ea fugiat assumenda voluptas fugit quasi ipsa ut quos quibusdam natus laboriosam in dignissimos consequatur quod at provident facere sed. Vero labore, dignissimos quo maxime nihil quam aspernatur repellat veniam nulla hic pariatur commodi officia autem.</p>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quae nihil similique accusantium eius facilis doloremque, harum accusamus, voluptate maiores obcaecati minus sapiente quidem nemo? Ullam dicta accusantium aut, pariatur officiis ex labore sint asperiores neque, veniam commodi nostrum maxime dolorum facere magni id cumque cupiditate. Quod optio obcaecati dolorem! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat aliquam at debitis perferendis, eligendi veniam dolorum, soluta ipsam quia, ratione minus molestiae. Quo, hic? Cupiditate iure libero alias sint! Modi illo nisi tenetur sed temporibus excepturi esse? Eaque aspernatur dolore necessitatibus iure voluptatem sunt quia sint maiores praesentium quis, corrupti culpa accusamus mollitia odit nostrum. Laborum veniam, officia delectus aut debitis pariatur aliquid eveniet ea fugiat assumenda voluptas fugit quasi ipsa ut quos quibusdam natus laboriosam in dignissimos consequatur quod at provident facere sed. Vero labore, dignissimos quo maxime nihil quam aspernatur repellat veniam nulla hic pariatur commodi officia autem.</p>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quae nihil similique accusantium eius facilis doloremque, harum accusamus, voluptate maiores obcaecati minus sapiente quidem nemo? Ullam dicta accusantium aut, pariatur officiis ex labore sint asperiores neque, veniam commodi nostrum maxime dolorum facere magni id cumque cupiditate. Quod optio obcaecati dolorem! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat aliquam at debitis perferendis, eligendi veniam dolorum, soluta ipsam quia, ratione minus molestiae. Quo, hic? Cupiditate iure libero alias sint! Modi illo nisi tenetur sed temporibus excepturi esse? Eaque aspernatur dolore necessitatibus iure voluptatem sunt quia sint maiores praesentium quis, corrupti culpa accusamus mollitia odit nostrum. Laborum veniam, officia delectus aut debitis pariatur aliquid eveniet ea fugiat assumenda voluptas fugit quasi ipsa ut quos quibusdam natus laboriosam in dignissimos consequatur quod at provident facere sed. Vero labore, dignissimos quo maxime nihil quam aspernatur repellat veniam nulla hic pariatur commodi officia autem.</p>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quae nihil similique accusantium eius facilis doloremque, harum accusamus, voluptate maiores obcaecati minus sapiente quidem nemo? Ullam dicta accusantium aut, pariatur officiis ex labore sint asperiores neque, veniam commodi nostrum maxime dolorum facere magni id cumque cupiditate. Quod optio obcaecati dolorem! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat aliquam at debitis perferendis, eligendi veniam dolorum, soluta ipsam quia, ratione minus molestiae. Quo, hic? Cupiditate iure libero alias sint! Modi illo nisi tenetur sed temporibus excepturi esse? Eaque aspernatur dolore necessitatibus iure voluptatem sunt quia sint maiores praesentium quis, corrupti culpa accusamus mollitia odit nostrum. Laborum veniam, officia delectus aut debitis pariatur aliquid eveniet ea fugiat assumenda voluptas fugit quasi ipsa ut quos quibusdam natus laboriosam in dignissimos consequatur quod at provident facere sed. Vero labore, dignissimos quo maxime nihil quam aspernatur repellat veniam nulla hic pariatur commodi officia autem.</p>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quae nihil similique accusantium eius facilis doloremque, harum accusamus, voluptate maiores obcaecati minus sapiente quidem nemo? Ullam dicta accusantium aut, pariatur officiis ex labore sint asperiores neque, veniam commodi nostrum maxime dolorum facere magni id cumque cupiditate. Quod optio obcaecati dolorem! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat aliquam at debitis perferendis, eligendi veniam dolorum, soluta ipsam quia, ratione minus molestiae. Quo, hic? Cupiditate iure libero alias sint! Modi illo nisi tenetur sed temporibus excepturi esse? Eaque aspernatur dolore necessitatibus iure voluptatem sunt quia sint maiores praesentium quis, corrupti culpa accusamus mollitia odit nostrum. Laborum veniam, officia delectus aut debitis pariatur aliquid eveniet ea fugiat assumenda voluptas fugit quasi ipsa ut quos quibusdam natus laboriosam in dignissimos consequatur quod at provident facere sed. Vero labore, dignissimos quo maxime nihil quam aspernatur repellat veniam nulla hic pariatur commodi officia autem.</p>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quae nihil similique accusantium eius facilis doloremque, harum accusamus, voluptate maiores obcaecati minus sapiente quidem nemo? Ullam dicta accusantium aut, pariatur officiis ex labore sint asperiores neque, veniam commodi nostrum maxime dolorum facere magni id cumque cupiditate. Quod optio obcaecati dolorem! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat aliquam at debitis perferendis, eligendi veniam dolorum, soluta ipsam quia, ratione minus molestiae. Quo, hic? Cupiditate iure libero alias sint! Modi illo nisi tenetur sed temporibus excepturi esse? Eaque aspernatur dolore necessitatibus iure voluptatem sunt quia sint maiores praesentium quis, corrupti culpa accusamus mollitia odit nostrum. Laborum veniam, officia delectus aut debitis pariatur aliquid eveniet ea fugiat assumenda voluptas fugit quasi ipsa ut quos quibusdam natus laboriosam in dignissimos consequatur quod at provident facere sed. Vero labore, dignissimos quo maxime nihil quam aspernatur repellat veniam nulla hic pariatur commodi officia autem.</p>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta quae nihil similique accusantium eius facilis doloremque, harum accusamus, voluptate maiores obcaecati minus sapiente quidem nemo? Ullam dicta accusantium aut, pariatur officiis ex labore sint asperiores neque, veniam commodi nostrum maxime dolorum facere magni id cumque cupiditate. Quod optio obcaecati dolorem! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat aliquam at debitis perferendis, eligendi veniam dolorum, soluta ipsam quia, ratione minus molestiae. Quo, hic? Cupiditate iure libero alias sint! Modi illo nisi tenetur sed temporibus excepturi esse? Eaque aspernatur dolore necessitatibus iure voluptatem sunt quia sint maiores praesentium quis, corrupti culpa accusamus mollitia odit nostrum. Laborum veniam, officia delectus aut debitis pariatur aliquid eveniet ea fugiat assumenda voluptas fugit quasi ipsa ut quos quibusdam natus laboriosam in dignissimos consequatur quod at provident facere sed. Vero labore, dignissimos quo maxime nihil quam aspernatur repellat veniam nulla hic pariatur commodi officia autem.</p>
+
+
+
   
   
 </body>
 </html>
+
+
+<!--
+  Usar a pseudo-classe	:nth-child( )
+
+ - Para linhas pares usar (even) ou (2n) - pares;
+ - Para linhas ímpares usar (odd) ou (2n-1) - impares.
+
+ Ex:	tbody > tr:nth-child(odd) {
+            	background-color: white;	(opcional quando o fundo já for branco)
+	}
+
+	tbody > tr:nth-child(even) {
+            	background-color: lightgray;
+	}
+-->
 
 <!--Escopo de títulos em tabelas
 
