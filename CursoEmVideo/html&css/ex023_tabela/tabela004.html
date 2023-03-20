@@ -43,6 +43,11 @@
                     text-align: center;
                   }
 
+                  .cor {
+                    background-color: aqua;
+                    font-weight: bold;
+                  }
+
               </style>
 
 </head>
@@ -54,12 +59,13 @@
         Filmes Favoritos
     </caption>
 
-    <th>Grupo</th> <!--Cabeçalho -->
-    <th>Nomes</th> <!--Cabeçalho -->
-    <th colspan="3">Filmes</th> <!--Cabeçalho -->
+    <th scope="col"> Grupo</th> <!--Cabeçalho -->
+    <th scope="co"> Nomes</th> <!--Cabeçalho -->
+    <th colspan="3" scope="colgroup">Filmes</th> <!--Cabeçalho -->
     <tr>
       
-      <td rowspan="3">Mulheres</td> <!--Linha/ o escopo pode ser colocado antes da construção da tabela. -->
+        <!--Somete usamos "scope" para "th" -->
+      <th class="cor"  rowspan="3" scope="rowgroup" > Mulheres</th> <!--Linha/ o escopo pode ser colocado antes da construção da tabela. -->
     
       <td>Ana Maria Santos</td>
       <td>Alien</td>
@@ -78,7 +84,7 @@
       <td>Inception</td>
       <td>Batman</td>
     </tr>
-    <td rowspan="4">Homens</td> <!--Linha -->
+    <th class="cor" rowspan="4" scope="rowgroup" >Homens</th> <!--Linha -->
     <tr>
       <td>Bruno Mendonça</td>
       <td>Intocáveis</td>
@@ -97,17 +103,15 @@
       <td>Taxi Driver</td>
       <td>Toy Story</td>
     </tr>
-   
-   
 
-    
-   
-        
-   
-   
-    
+    <tfoot>
+      
+      <tr>
+        <th  class="cor" colspan="4" scope="row">Total</th>
+        <td>1000</td>
+      </tr>
 
-  
+    </tfoot> 
 
   </table>
 </body>
