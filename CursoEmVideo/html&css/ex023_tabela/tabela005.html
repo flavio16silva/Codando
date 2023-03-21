@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>Exercicio de Tabela</title>
+
+  <!--Para grupo de colunas:
+
+   Ex:	HTML:	<colgroup>
+            		   <col class="cnome">
+            		   <col class="cgrupo" span="2">	(2 colunas serão formatadas)
+            		   <col class="cprof">
+        		  </ colgroup>
+
+	        CSS:	col.cgrupo {
+            	 background-color: red;
+		                }
+
+-->
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    table {
+      width: 400px;
+      height: 200px;
+      border-collapse: collapse;
+    }
+
+    caption {
+      font-size: 1.3em;
+      font-weight: bold;
+      padding: 10px;
+    }
+
+    th {
+      border: 1px solid black;
+      padding: 5px;
+      color: black;
+      }
+
+    td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    }
+
+     /*Coluna Nome*/ 
+    col.cnome {
+      background-color: darkturquoise;
+    }
+
+    /*col.csexo {
+      background-color: green;
+    } - Comentado para testar o "cgrupo"*/
+
+    col.cgrupo {
+        background-color: blueviolet;
+    }
+
+  </style>
+</head>
+<body>
+    <table>
+      <!--col, não tem tag de fechamento/ Usado para trabalhar em toda a coluna-->
+      <col class="cnome"> <!--Coluna Nome-->
+      <!--<col class="csexo"> Coluna Sexo-->
+      <col class="cgrupo" span="2">
+      <!--<col class="cidade"> Coluna Cidade-->
+      <col class="cprof"> <!--Coluna Professor-->
+
+
+
+      <Caption>Cadastro</Caption>
+
+      <thead>
+        <th>Nome</th>
+        <th>Sexo</th>
+        <th>Idade</th>
+        <th>Profissão</th>
+      </thead>
+
+      <tbody>
+          <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+          </tr>
+
+          <tr>
+            <td>Cláudio</td>
+            <td>M</td>
+            <td>28</td>
+            <td>Programador</td>
+          </tr>
+
+          <tr>
+            <td>Gustavo</td>
+            <td>M</td>
+            <td>42</td>
+            <td>Professor</td>
+          </tr>
+
+          <tr>
+            <td>Hélio</td>
+            <td>M</td>
+            <td>19</td>
+            <td>Vendedor</td>
+          </tr>
+
+          <tr>
+            <td>Maria</td>
+            <td>F</td>
+            <td>39</td>
+            <td>Médica</td>
+          </tr>
+
+          <tr>
+            <td>Otávio</td>
+            <td>M</td>
+            <td>22</td>
+            <td>Nutricionista</td>
+          </tr>
+
+      </tbody>
+    </table>
+</body>
+</html>
