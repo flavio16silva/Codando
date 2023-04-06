@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teste com Iframe</title>
+
+  <style>
+    iframe{
+      width: 400px;
+      display: block;
+      margin:auto;
+    }
+  </style>
+</head>
+
+<!--Inclusão de outras paginas dentro da pagina original atravês do Iframe-->
+<body>
+
+  <h1>Testando Iframe</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam perspiciatis officia doloremque qui sequi pariatur assumenda et recusandae dignissimos, officiis commodi repudiandae quaerat expedita similique ratione praesentium sapiente, voluptatibus provident voluptas necessitatibus neque sit inventore facilis. Porro debitis doloremque error corporis nihil nam fugiat eum vitae maxime iusto tempore veritatis, itaque voluptates aperiam nostrum amet laboriosam quae repudiandae repellat tenetur! Iure dolorem provident consequuntur beatae est nam earum ipsa nulla quis accusantium. Id officiis similique commodi ipsam eligendi accusamus ex dolores maxime repudiandae eaque nemo incidunt quas eveniet fugiat explicabo amet quos blanditiis magnam asperiores, aspernatur doloremque voluptatum doloribus neque!</p>
+
+  <iframe src="paginas_extras/pag001.html" frameborder="0" height="500" width="500">
+
+      <p>Infelizmente seu navegador não é compatível com isso!</p>
+
+  </iframe>
+
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam perspiciatis officia doloremque qui sequi pariatur assumenda et recusandae dignissimos, officiis commodi repudiandae quaerat expedita similique ratione praesentium sapiente, voluptatibus provident voluptas necessitatibus neque sit inventore facilis. Porro debitis doloremque error corporis nihil nam fugiat eum vitae maxime iusto tempore veritatis, itaque voluptates aperiam nostrum amet laboriosam quae repudiandae repellat tenetur! Iure dolorem provident consequuntur beatae est nam earum ipsa nulla quis accusantium. Id officiis similique commodi ipsam eligendi accusamus ex dolores maxime repudiandae eaque nemo incidunt quas eveniet fugiat explicabo amet quos blanditiis magnam asperiores, aspernatur doloremque voluptatum doloribus neque!</p>
+  
+</body>
+</html>
+
+
+<!--Inserindo conteúdo de site local no iframe:
+
+1) Criar na mesma pasta, uma página com o conteúdo a ser exibido no iframe da -> página principal;
+
+2) No iframe da página principal, inserir em 'src' o link da página a ser exibida;
+
+ Ex:	<iframe src="pag001 . html" frameborder="0"></iframe>
+
+
+ Obs:   Um site com tabela também pode ser inserido dentro de um <iframe>, mas é recomendável inseri-la dentro de uma 
+            <div>, pois facilita a ação dos mecanismos de busca;-->
