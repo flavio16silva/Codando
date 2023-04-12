@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+</head>
+<body>
+  <h1>Seletores</h1>
+    <form action="cadastro.php" method="get" >
+    
+      <fieldset>
+        <legend>Estado</legend>
+          <label for="iest">Escolha seu Estado: </label>
+
+          <select name="estado" id="iest">
+            <option value="" selected>-- Escolha sua região --</option> <!--Nome que aparece no select-->
+                <optgroup label="Regiao Sudeste"> <!--Incluir para deixar dividido por categoria-->
+                  <option value="MG">Minas Gerais</option>
+                  <option value="SP">São Paulo</option>
+                  <option value="RJ">Rio de Janeiro</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                  <option value="BA">Bahia</option>
+                  <option value="PE">Pernambuco</option>
+                  <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+
+          </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Profissão</legend>
+        <label for="iprof">Profissão: </label>
+        <input type="text" name="prof" id="iprof" list="lstprof"> 
+        <!--Ao inserir o "id" do "datalist" (id="lstprof") no "input" (list="lstprof"), cria-se a opção de passar o mouse e aparecer uma seta na lista para escolha das opções. -->
+        <datalist id="lstprof">
+          <option value="ADM">Administrador</option>
+          <option value="DEV">Desenvolvedor</option>
+          <option value="ENG">Engenheiro</option>
+          <option value="ARQ">Arquiteto</option>
+        </datalist>
+      </fieldset>
+
+      <fieldset>
+        <legend>Digite sua Mensagem</legend>
+        <label for="imsg">Mensagem: </label><br>
+        <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+      </fieldset>
+     
+      
+      
+     
+
+        <p>
+          <input type="submit" value="Enviar">
+          <input type="reset" value="Limpar">
+        </p>
+
+     
+
+    </form>
+    
+
+</body>
+</html>
+
+<!--
+Autocomplete dentro do input (informação do que será preenchido):
+
+	1) Dentro da tag <form>, devemos ter autocomplete="on";
+	2) Dentro do input, inserir mais um autocomplete=" ". Nesse caso teremos mais opções
+	de preenchimento (ex: nickname, username, organization, current password,...).
+
+   Ex:   <form action="cadastro.php" method="post" autocomplete="on">
+	           <p>
+          	        <label for="iusu">Usuário: </label>
+	                <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="10" placeholder="nome do 
+                         usuário" autocomplete="username">
+
+	          </p>
+	  </form>
+
+
+
+-->
