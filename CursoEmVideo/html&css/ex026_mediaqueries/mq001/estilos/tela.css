@@ -30,6 +30,12 @@ menu li {
   color: white;
   display: inline-block;
   padding: 10px;
+  border-radius: 5px;
+}
+
+menu li:hover {
+  box-shadow: 5px 5px 5px black;
+ 
 }
 
 article {
