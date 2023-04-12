@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+</head>
+<body>
+  <h1>Testando Inputs</h1>
+    <form action="cadastro.php" method="get" >
+      <!--quando o input for do tipo text, usar: minlength e maxlength-->
+      <fieldset>
+        <legend>Esportes Favoritos</legend>
+        <p>
+          <input type="checkbox" name="esbas" id="iesbas"><label for="iesbas">Basquete</label>
+          <input type="checkbox" name="esfut" id="iesfut"><label for="iesfut">Futebol</label>
+          <input type="checkbox" name="esvol" id="iesvol"><label for="iesvol">Volei</label>
+          <input type="checkbox" name="esnat" id="iesnat"><label for="iesnat">Natação</label>
+        </p> 
+      </fieldset>
+      <fieldset>
+        <legend>Sexo</legend>
+        <input type="radio" name="sexo" id="imas" value="M"><label for="imas">Masculino</label>
+        <input type="radio" name="sexo" id="ifem" value="F"><label for="ifem">Feminino</label>
+      </fieldset>
+
+        <p>
+          <input type="submit" value="Enviar">
+          <input type="reset" value="Limpar">
+        </p>
+
+     
+
+    </form>
+    
+
+</body>
+</html>
+
+<!--
+Autocomplete dentro do input (informação do que será preenchido):
+
+	1) Dentro da tag <form>, devemos ter autocomplete="on";
+	2) Dentro do input, inserir mais um autocomplete=" ". Nesse caso teremos mais opções
+	de preenchimento (ex: nickname, username, organization, current password,...).
+
+   Ex:   <form action="cadastro.php" method="post" autocomplete="on">
+	           <p>
+          	        <label for="iusu">Usuário: </label>
+	                <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="10" placeholder="nome do 
+                         usuário" autocomplete="username">
+
+	          </p>
+	  </form>
+
+
+
+-->
