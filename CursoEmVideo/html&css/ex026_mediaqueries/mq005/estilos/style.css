@@ -7,7 +7,7 @@
  }
 
  body, html{
-  background-color:rgb(141, 182, 196) ;
+  background-color:rgb(141, 182, 196);
  }
 
  header{
@@ -40,6 +40,8 @@
 
  menu > ul{
   list-style-type: none;
+  padding-bottom: 3px;
+  padding: 10px;
  }
 
  menu > ul > li > a{
@@ -49,8 +51,9 @@
   background-color: rgba(90, 121, 132, 0.387);
   color:white;
   text-align: center;
-  border-top: 2px solid gray;
- 
+  border-radius: 5px;
+  margin:3px;
+   
  }
 
  menu > ul > li > a:hover{
